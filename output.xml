@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-25T17:29:49.712427" rpa="false" schemaversion="5">
+<suite id="s1" name="nubankClone" source="c:\Users\Carol\Desktop\QA RARO\atividade9-academy-CAROLINE-MAIA\android\features\nubankClone.robot">
+<test id="s1-t1" name="Clicar em um elemento" line="10">
+<kw name="Open App" owner="config" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://127.0.0.1:4723</arg>
+<arg>automationName=${ANDROID_AUTOMATION_NAME}</arg>
+<arg>platformName=${ANDROID_PLATFORM_NAME}</arg>
+<arg>platformVersion=${ANDROID_APP_VERSION}</arg>
+<arg>appActivity=${ANDROID_APP_ACTIVITY}</arg>
+<arg>appPackage=${ANDROID_APP_PACKAGE}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-05-25T17:29:50.042043" elapsed="12.543043"/>
+</kw>
+<status status="PASS" start="2024-05-25T17:29:50.041539" elapsed="12.543547"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-25T17:30:02.587618" level="INFO">Clicking element 'xpath=//android.widget.ScrollView/android.widget.HorizontalScrollView[1]/android.widget.Button[1]'.</msg>
+<msg time="2024-05-25T17:30:03.585248" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.HorizontalScrollView[1]/android.widget.Button[1]</msg>
+<arg>xpath=//android.widget.ScrollView/android.widget.HorizontalScrollView[1]/android.widget.Button[1]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-25T17:30:02.585589" elapsed="0.999659"/>
+</kw>
+<kw name="Teardown" owner="config" type="TEARDOWN">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2024-05-25T17:30:03.586757" elapsed="0.000000"/>
+</kw>
+<arg>Run Keyword If Test Failed</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-05-25T17:30:03.586757" elapsed="0.000000"/>
+</kw>
+<kw name="Close All Applications" owner="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" start="2024-05-25T17:30:03.586757" elapsed="0.376537"/>
+</kw>
+<status status="PASS" start="2024-05-25T17:30:03.586251" elapsed="0.377043"/>
+</kw>
+<status status="PASS" start="2024-05-25T17:29:50.040209" elapsed="13.923085"/>
+</test>
+<status status="PASS" start="2024-05-25T17:29:49.718215" elapsed="14.246393"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="nubankClone">nubankClone</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-25T17:29:50.040061" level="WARN">Imported resource file 'c:\Users\Carol\Desktop\QA RARO\atividade9-academy-CAROLINE-MAIA\android\pages\nubankClonePage.robot' is empty.</msg>
+</errors>
+</robot>
