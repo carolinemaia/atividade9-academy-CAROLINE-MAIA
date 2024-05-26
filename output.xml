@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-25T22:42:43.046489" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-26T11:37:21.823721" rpa="false" schemaversion="5">
 <suite id="s1" name="nubankClone" source="c:\Users\Carol\Desktop\QA RARO\atividade9-academy-CAROLINE-MAIA\android\features\nubankClone.robot">
-<test id="s1-t1" name="CT003 - Navegar entre atalho" line="21">
+<test id="s1-t1" name="C001 - Rolar tela do aplicativo" line="11">
 <kw name="Dado que o usuário está logado no aplicativo" owner="nubankClonePage">
 <kw name="Open App" owner="config">
 <kw name="Open Application" owner="AppiumLibrary">
@@ -18,89 +18,74 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2024-05-25T22:42:43.477824" elapsed="13.854903"/>
+<status status="PASS" start="2024-05-26T11:37:22.032425" elapsed="12.529590"/>
 </kw>
-<status status="PASS" start="2024-05-25T22:42:43.477824" elapsed="13.854903"/>
+<status status="PASS" start="2024-05-26T11:37:22.031784" elapsed="12.530231"/>
 </kw>
-<status status="PASS" start="2024-05-25T22:42:43.476817" elapsed="13.855910"/>
+<status status="PASS" start="2024-05-26T11:37:22.030787" elapsed="12.531228"/>
 </kw>
 <kw name="Quando o usuário está na tela inicial" owner="nubankClonePage">
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2024-05-25T22:42:58.190025" level="INFO">xpath criteria: //android.view.View[@content-desc="Olá, Breno Freitas"]</msg>
+<msg time="2024-05-26T11:37:35.444834" level="INFO">xpath criteria: //android.view.View[@content-desc="Olá, Breno Freitas"]</msg>
+<arg>${DADOS_NOME}</arg>
+<arg>10</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-26T11:37:34.563021" elapsed="0.884325"/>
+</kw>
+<status status="PASS" start="2024-05-26T11:37:34.563021" elapsed="0.884325"/>
+</kw>
+<kw name="Então consegue navegar até o final da tela" owner="nubankClonePage">
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>640</arg>
+<arg>2032</arg>
+<arg>640</arg>
+<arg>121</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2024-05-26T11:37:35.448344" elapsed="1.308560"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-26T11:37:39.163296" level="INFO">xpath criteria: //android.view.View[contains(@content-desc,'WhatsApp')]</msg>
+<arg>${WHATSAPP}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-05-26T11:37:36.757793" elapsed="2.406509"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>640</arg>
+<arg>68</arg>
+<arg>640</arg>
+<arg>2032</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2024-05-26T11:37:39.164302" elapsed="1.302724"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-05-26T11:37:42.401830" level="INFO">xpath criteria: //android.view.View[@content-desc="Olá, Breno Freitas"]</msg>
 <arg>${DADOS_NOME}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2024-05-25T22:42:57.335234" elapsed="0.864438"/>
+<status status="PASS" start="2024-05-26T11:37:40.467271" elapsed="1.934559"/>
 </kw>
-<kw name="Page Should Contain Element" owner="AppiumLibrary">
-<msg time="2024-05-25T22:42:58.259166" level="INFO">Current page contains element 'xpath=//android.widget.ScrollView/android.view.View[1]'.</msg>
-<msg time="2024-05-25T22:42:58.259677" level="INFO">xpath criteria: //android.widget.ScrollView/android.view.View[1]</msg>
-<arg>xpath=//android.widget.ScrollView/android.view.View[1]</arg>
-<doc>Verifies that current page contains `locator` element.</doc>
-<status status="PASS" start="2024-05-25T22:42:58.199672" elapsed="0.060005"/>
-</kw>
-<kw name="Page Should Contain Element" owner="AppiumLibrary">
-<msg time="2024-05-25T22:42:58.311176" level="INFO">Current page contains element 'xpath=//android.widget.ScrollView/android.widget.Button[1]'.</msg>
-<msg time="2024-05-25T22:42:58.311176" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.Button[1]</msg>
-<arg>xpath=//android.widget.ScrollView/android.widget.Button[1]</arg>
-<doc>Verifies that current page contains `locator` element.</doc>
-<status status="PASS" start="2024-05-25T22:42:58.259677" elapsed="0.052536"/>
-</kw>
-<kw name="Page Should Contain Element" owner="AppiumLibrary">
-<msg time="2024-05-25T22:42:58.360723" level="INFO">Current page contains element 'xpath=//android.widget.ScrollView/android.widget.Button[2]'.</msg>
-<msg time="2024-05-25T22:42:58.360723" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.Button[2]</msg>
-<arg>xpath=//android.widget.ScrollView/android.widget.Button[2]</arg>
-<doc>Verifies that current page contains `locator` element.</doc>
-<status status="PASS" start="2024-05-25T22:42:58.312213" elapsed="0.048510"/>
-</kw>
-<kw name="Page Should Contain Element" owner="AppiumLibrary">
-<msg time="2024-05-25T22:42:58.411354" level="INFO">Current page contains element 'xpath=//android.widget.ScrollView/android.widget.Button[3]'.</msg>
-<msg time="2024-05-25T22:42:58.411354" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.Button[3]</msg>
-<arg>xpath=//android.widget.ScrollView/android.widget.Button[3]</arg>
-<doc>Verifies that current page contains `locator` element.</doc>
-<status status="PASS" start="2024-05-25T22:42:58.361763" elapsed="0.050601"/>
-</kw>
-<status status="PASS" start="2024-05-25T22:42:57.334234" elapsed="1.078130"/>
-</kw>
-<kw name="Então consegue navegar entre os atalhos de movimentação de moeda" owner="nubankClonePage">
-<kw name="Swipe" owner="AppiumLibrary">
-<arg>308</arg>
-<arg>872</arg>
-<arg>786</arg>
-<arg>872</arg>
-<doc>Swipe from one point to another point, for an optional duration.</doc>
-<status status="PASS" start="2024-05-25T22:42:58.412364" elapsed="1.308800"/>
-</kw>
-<kw name="Swipe" owner="AppiumLibrary">
-<arg>786</arg>
-<arg>872</arg>
-<arg>238</arg>
-<arg>872</arg>
-<doc>Swipe from one point to another point, for an optional duration.</doc>
-<status status="PASS" start="2024-05-25T22:42:59.721164" elapsed="1.306003"/>
-</kw>
-<status status="PASS" start="2024-05-25T22:42:58.412364" elapsed="2.614803"/>
+<status status="PASS" start="2024-05-26T11:37:35.447346" elapsed="6.954484"/>
 </kw>
 <kw name="Teardown" owner="config" type="TEARDOWN">
 <kw name="Run Keyword" owner="BuiltIn">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <arg>Capture Page Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2024-05-25T22:43:01.028568" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-26T11:37:42.402834" elapsed="0.000000"/>
 </kw>
 <arg>Run Keyword If Test Failed</arg>
 <arg>Capture Page Screenshot</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<status status="PASS" start="2024-05-25T22:43:01.028568" elapsed="0.000506"/>
+<status status="PASS" start="2024-05-26T11:37:42.402834" elapsed="0.000000"/>
 </kw>
 <kw name="Close All Applications" owner="AppiumLibrary">
 <doc>Closes all open applications.</doc>
-<status status="PASS" start="2024-05-25T22:43:01.029074" elapsed="0.422275"/>
+<status status="PASS" start="2024-05-26T11:37:42.402834" elapsed="0.324558"/>
 </kw>
-<status status="PASS" start="2024-05-25T22:43:01.028063" elapsed="0.424287"/>
+<status status="PASS" start="2024-05-26T11:37:42.402834" elapsed="0.324558"/>
 </kw>
-<status status="PASS" start="2024-05-25T22:42:43.475626" elapsed="17.976724"/>
+<status status="PASS" start="2024-05-26T11:37:22.029790" elapsed="20.697602"/>
 </test>
-<status status="PASS" start="2024-05-25T22:42:43.053213" elapsed="18.400206"/>
+<status status="PASS" start="2024-05-26T11:37:21.828228" elapsed="20.902186"/>
 </suite>
 <statistics>
 <total>

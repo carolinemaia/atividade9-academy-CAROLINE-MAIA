@@ -5,8 +5,11 @@ Resource    ../utils/config.robot
 *** Variables ***
 ${DADOS_NOME}    xpath=//android.view.View[@content-desc="Olá, Breno Freitas"]
 ${DADOS_CONTA}   xpath=//android.view.View[contains(@content-desc,'Conta')]
-
-
+${ICON_PERFIL}   xpath=//xpath=//android.widget.ScrollView/android.view.View[1]
+${ICON_OLHO}     xpath=//xpath=//android.widget.ScrollView/android.widget.Button[1]
+${ICON_AJUDA}    xpath=//android.widget.ScrollView/android.widget.Button[2]
+${ICON_EMAIL}    xpath=//android.widget.ScrollView/android.widget.Button[3]
+${WHATSAPP}      xpath=//android.view.View[contains(@content-desc,'WhatsApp')]
 
 
 *** Keywords ***
@@ -14,11 +17,19 @@ Dado que o usuário está logado no aplicativo
     Open App
 
 Quando o usuário está na tela inicial
-    Wait Until Page Contains Element    ${DADOS_NOME}
-    Page Should Contain Element    xpath=//android.widget.ScrollView/android.view.View[1]
-    Page Should Contain Element    xpath=//android.widget.ScrollView/android.widget.Button[1]
-    Page Should Contain Element    xpath=//android.widget.ScrollView/android.widget.Button[2]
-    Page Should Contain Element    xpath=//android.widget.ScrollView/android.widget.Button[3]   
+    Wait Until Page Contains Element    ${DADOS_NOME}    10
+    #Page Should Contain Element         ${ICON_PERFIL}
+    #Page Should Contain Element         ${ICON_OLHO}
+    #Page Should Contain Element         ${ICON_AJUDA}
+    #Page Should Contain Element         ${ICON_EMAIL}
+
+#MELHORAR CASO DE TESTE PRA QUE SE ACHAR O ELEMENTO NO FINAL DA TELA SUBIR ATE O INICIO
+Então consegue navegar até o final da tela
+    Swipe    640    2032    640    121
+    Wait Until Page Contains Element        ${WHATSAPP}
+    Swipe    640    68     640    2032
+    Wait Until Page Contains Element        ${DADOS_NOME}
+
 
 Então consegue visualizar seu Nome
     Wait Until Page Contains Element    ${DADOS_NOME}    10s
@@ -28,7 +39,8 @@ Então consegue visualizar saldo atual da Conta
     Element Should Be Visible      ${DADOS_CONTA}
 
 Então consegue navegar entre os atalhos de movimentação de moeda
-    Swipe    308    872    786    872
-    Swipe    786    872    238    872
+    Swipe    872    872    238    872
+    Swipe    248    872    872    872
+    Swipe    872    872    238    872
 
 
