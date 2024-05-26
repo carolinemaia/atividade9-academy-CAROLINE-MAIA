@@ -62,12 +62,30 @@ CT009 - Acessar funcionalidade de PIX
 CT010 - Voltar para tela inicial apos acessar funcionalidade de PIX clicando no X
     Dado que o usuário está logado no aplicativo
     E esta na tela de funcionalidade de PIX
-    Então consegue retornar para tela inicial clicando no x
+    Então consegue retornar para tela inicial clicando no x do pix
 
 #CT011 - Voltar para tela inicial apos acessar funcionalidade de PIX arrastando a tela
     #Dado que o usuário está logado no aplicativo
     #E esta na tela de funcionalidade de PIX
     #Então consegue retornar para tela inicial arrastando a tela para baixo
+
+CT012 - Acessar funcionalidade de pagar boleto
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    E acessar a funcionalidade de Pagar
+    Então visualizar todas as opcoes de Pagamento
+
+CT013 - Voltar para tela inicial apos acessar funcionalidade de PAGAR clicando no X
+    Dado que o usuário está logado no aplicativo
+    E esta na tela de funcionalidade de Pagar
+    Então consegue retornar para tela inicial clicando no x de pagar
+
+
+
+
+
+
+    
 
     
     
