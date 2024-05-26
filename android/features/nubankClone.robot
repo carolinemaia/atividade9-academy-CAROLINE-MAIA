@@ -7,6 +7,7 @@ Resource    ../pages/pixPage.robot
 Resource    ../pages/pagarPage.robot
 Resource    ../pages/transferirPage.robot
 Resource    ../pages/depositoPage.robot
+Resource    ../pages/emprestimoPage.robot
 
 #Test Setup        Open App
 Test Teardown     Teardown
@@ -125,35 +126,14 @@ CT021 - Voltar para tela inicial apos acessar funcionalidade de DEPÓSITO clican
     Quando o usuario esta na tela de Depósito
     Então consegue retornar para tela inicial clicando no x de depósito
 
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-    
-
-    
-    
-
-
-
-
-
-
-
-
-Pegar posição bo botão
+CT022 - Acessar funcionalidade de Emprestimo pelo icone
     Dado que o usuário está logado no aplicativo
-    Wait Until Page Contains Element    xpath=//android.view.View[@content-desc="Descubra mais"]    10
-    ${pix_button_location}=     Get Element Location    xpath=//android.view.View[@content-desc="Descubra mais"]
-    Log    ${pix_button_location}    
+    Quando o usuário está na tela inicial
+    Então consegue acessar a funcionalidade de Emprestimo
+    E visualiza opcao de solicitar novo emprestimo
+
+CT023 - Visualiza emprestimos ativos
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela de Emprestimo
+    Entao visualiza informacao se ha emprestimo ativo
 
