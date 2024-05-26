@@ -23,10 +23,31 @@ CT003 - Visualizar saldo bancário
     Quando o usuário está na tela inicial
     Então consegue visualizar saldo atual da Conta
 
-CT004 - Navegar entre atalho
+CT004 - Navegar entre atalho de movimentação de dinheiro
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
     Então consegue navegar entre os atalhos de movimentação de moeda
+
+CT005 - Visualizar atalho de Meus Cartões
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    Então consegue visualizar o atalho Meus Cartões
+    E consegue clicar no atalho Meus Cartões
+
+CT006 - Visualiza disponibilidade de Emprestimo
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    Então o usuário consegue visualizar a opcao de Emprestimo
+
+#verificar se faco caso de teste pra visualizar o valor do emprestimo
+CT007 - Acessa funcionalidade de Emprestimo
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    Então acessa a funcionalidade de Emprestimo
+    E visualiza opcao de solicitar novo emprestimo
+
+
+
 
 
 
