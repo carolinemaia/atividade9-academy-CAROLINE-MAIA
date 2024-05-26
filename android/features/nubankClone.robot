@@ -3,6 +3,9 @@
 Resource    ../../base.robot
 Resource    ../utils/config.robot
 Resource    ../pages/nubankClonePage.robot
+Resource    ../pages/pixPage.robot
+Resource    ../pages/pagarPage.robot
+Resource    ../pages/transferirPage.robot
 
 #Test Setup        Open App
 Test Teardown     Teardown
@@ -79,6 +82,16 @@ CT013 - Voltar para tela inicial apos acessar funcionalidade de PAGAR clicando n
     Dado que o usuário está logado no aplicativo
     E esta na tela de funcionalidade de Pagar
     Então consegue retornar para tela inicial clicando no x de pagar
+
+CT014 - Acessar funcionalidade de Transferencia
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    Então consegue acessar a funcionalidade de Transferencia
+    E o campo para inserir o valor deve estar zerado
+
+
+
+
 
 
 
