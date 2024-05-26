@@ -6,6 +6,7 @@ Resource    ../pages/telaInicialPage.robot
 Resource    ../pages/pixPage.robot
 Resource    ../pages/pagarPage.robot
 Resource    ../pages/transferirPage.robot
+Resource    ../pages/depositoPage.robot
 
 #Test Setup        Open App
 Test Teardown     Teardown
@@ -58,7 +59,6 @@ CT008 - Visualizar atalho para guardar dinheiro
 CT009 - Acessar funcionalidade de PIX 
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
-    E clica no atalho de PIX
     Então consegue acessar a funcionalidade de PIX
     E consegue visualizar todas as funcoes do PIX
 
@@ -103,6 +103,31 @@ CT017 - Nao deve ser possivel considerar numero maior que 14 digitos
     Dado que o usuário está logado no aplicativo
     Quando o usuario esta na tela de Transferencia
     Então nao deve considerar valor inserido apos 14 digitos
+
+CT18 - Deve ser possivel clicar no icone de QRCode na tela de Transferencia
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario esta na tela de Transferencia
+    Então consegue clicar no icone de Qrcode
+
+CT019 - Voltar para tela inicial apos acessar funcionalidade de TRANSFERENCIA clicando no X
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario esta na tela de Transferencia
+    Então consegue retornar para tela inicial clicando no x de transferencia
+
+CT020 - Acessar funcionalidade de Depositar
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    Então consegue acessar a funcionalidade de Depósito
+    E consegue visualizar todas as funcoes para depositar
+
+CT021 - Voltar para tela inicial apos acessar funcionalidade de DEPÓSITO clicando no X
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario esta na tela de Depósito
+    Então consegue retornar para tela inicial clicando no x de depósito
+
+
+
+
     
 
 

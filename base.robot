@@ -11,3 +11,4 @@ Resource    android/pages/telaInicialPage.robot
 Resource    android/pages/pixPage.robot
 Resource    android/pages/pagarPage.robot
 Resource    android/pages/transferirPage.robot
+Resource    android/pages/depositoPage.robot

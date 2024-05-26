@@ -15,6 +15,7 @@ ${MEUS_CARTOES}               xpath=//android.view.View[@content-desc="Meus cart
 ${EMPRESTIMO}                 xpath=//android.view.View[@content-desc="Você tem R$ 10.000,00 disponíveis para empréstimo."]
 ${NOVO_EMPRESTIMO}            xpath=//android.widget.Button[@content-desc="NOVO EMPRÉSTIMO"]
 ${GUARDAR_DINHEIRO}           xpath=//android.view.View[@content-desc="Conquiste planos futuros: conheça as opções para guardar dinheiro."]
+${FECHAR}                     xpath=//android.widget.Button
 
 
 *** Keywords ***

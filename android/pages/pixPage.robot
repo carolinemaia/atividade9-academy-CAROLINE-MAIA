@@ -15,11 +15,8 @@ ${MEAJUDA_PIX}                xpath=//android.view.View[@content-desc="Me ajuda"
 ${FECHAR_PIX}                 xpath=//android.widget.ImageView/android.widget.Button[1]
 
 *** Keywords ***
-
-E clica no atalho de PIX
-    Clica no atalho       ${PIX}
-
 Então consegue acessar a funcionalidade de PIX
+    Clica no atalho       ${PIX}
     Visualiza o atalho    ${AREA_PIX}
 
 E consegue visualizar todas as funcoes do PIX
