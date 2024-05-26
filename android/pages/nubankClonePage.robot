@@ -13,7 +13,18 @@ ${ICON_EMAIL}         xpath=//android.widget.ScrollView/android.widget.Button[3]
 ${WHATSAPP}           xpath=//android.view.View[contains(@content-desc,'WhatsApp')]
 ${MEUS_CARTOES}       xpath=//android.view.View[@content-desc="Meus cartões"]
 ${EMPRESTIMO}         xpath=//android.view.View[@content-desc="Você tem R$ 10.000,00 disponíveis para empréstimo."]
-${NOVO_EMPRESTIMO}    xpath=//android.widget.Button[@content-desc="NOVO EMPRÉSTIMO"] 
+${NOVO_EMPRESTIMO}    xpath=//android.widget.Button[@content-desc="NOVO EMPRÉSTIMO"]
+${GUARDAR_DINHEIRO}   xpath=//android.view.View[@content-desc="Conquiste planos futuros: conheça as opções para guardar dinheiro."]
+${PIX}                xpath=//android.widget.ScrollView/android.widget.HorizontalScrollView[1]/android.widget.Button[1]
+${AREA_PIX}           xpath=//android.widget.ImageView[@content-desc="Minha área Pix\nTudo o que você precisa para pagar, transferir ou cobrar.\nPagar\nTransferir\nCobrar"]
+${QRCODE_PIX}         xpath=//android.widget.ImageView/android.widget.Button[2]
+${ICON_ENVIAR_PIX}    xpath=//android.widget.ImageView/android.widget.Button[3]
+${ICON_AJUDA_PIX}     xpath=//android.widget.ImageView/android.widget.Button[4]
+${CHAVES_PIX}         xpath=//android.view.View[@content-desc="Minhas chaves"]
+${LIMITES_PIX}        xpath=//android.view.View[@content-desc="Meu limite Pix"]
+${MEAJUDA_PIX}        xpath=//android.view.View[@content-desc="Me ajuda"]
+${FECHAR_PIX}         xpath=//android.widget.ImageView/android.widget.Button[1]
+
 
 
 *** Keywords ***
@@ -61,6 +72,47 @@ Então acessa a funcionalidade de Emprestimo
 
 E visualiza opcao de solicitar novo emprestimo
     Visualiza o atalho    ${NOVO_EMPRESTIMO}
+
+Então consegue visualizar o atalho Guardar Dinheiro
+    Swipe    500    1466    0    1466
+    Visualiza o atalho    ${GUARDAR_DINHEIRO}
+
+E consegue clicar no atalho Guardar Dinheiro
+    Swipe    500    1466    0    1466
+    Clica no atalho       ${GUARDAR_DINHEIRO}
+
+E clica no atalho de PIX
+    Clica no atalho       ${PIX}
+
+Então consegue acessar a funcionalidade de PIX
+    Visualiza o atalho    ${AREA_PIX}
+
+E consegue visualizar todas as funcoes do PIX
+    Visualiza o atalho    ${QRCODE_PIX}
+    Visualiza o atalho    ${ICON_ENVIAR_PIX}
+    Visualiza o atalho    ${CHAVES_PIX}
+    Visualiza o atalho    ${LIMITES_PIX}
+    Visualiza o atalho    ${MEAJUDA_PIX}
+
+E esta na tela de funcionalidade de PIX
+    Clica no atalho       ${PIX}
+    Visualiza o atalho    ${AREA_PIX}
+Então consegue retornar para tela inicial clicando no x
+    Clica no atalho       ${FECHAR_PIX}
+    Visualiza o atalho    ${DADOS_NOME}
+
+Então consegue retornar para tela inicial arrastando a tela para baixo
+    Clica no atalho    ${AREA_PIX}
+
+
+    
+
+
+
+
+
+    
+
     
     
 

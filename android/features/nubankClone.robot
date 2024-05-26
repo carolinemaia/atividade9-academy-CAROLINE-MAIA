@@ -46,6 +46,34 @@ CT007 - Acessa funcionalidade de Emprestimo
     Então acessa a funcionalidade de Emprestimo
     E visualiza opcao de solicitar novo emprestimo
 
+CT008 - Visualizar atalho para guardar dinheiro
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    Então consegue visualizar o atalho Guardar Dinheiro
+    E consegue clicar no atalho Guardar Dinheiro
+
+CT009 - Acessar funcionalidade de PIX 
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    E clica no atalho de PIX
+    Então consegue acessar a funcionalidade de PIX
+    E consegue visualizar todas as funcoes do PIX
+
+CT010 - Voltar para tela inicial apos acessar funcionalidade de PIX clicando no X
+    Dado que o usuário está logado no aplicativo
+    E esta na tela de funcionalidade de PIX
+    Então consegue retornar para tela inicial clicando no x
+
+#CT011 - Voltar para tela inicial apos acessar funcionalidade de PIX arrastando a tela
+    #Dado que o usuário está logado no aplicativo
+    #E esta na tela de funcionalidade de PIX
+    #Então consegue retornar para tela inicial arrastando a tela para baixo
+
+    
+    
+
+
+
 
 
 
