@@ -1,6 +1,6 @@
 *** Settings ***
 
-Resource    ../base.robot
+Resource    ../../base.robot
 
 *** Variables ***
 ${ANDROID_AUTOMATION_NAME}    UIAutomator2
