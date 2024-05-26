@@ -2,7 +2,7 @@
 
 Resource    ../../base.robot
 Resource    ../utils/config.robot
-Resource    ../pages/nubankClonePage.robot
+Resource    ../pages/telaInicialPage.robot
 Resource    ../pages/pixPage.robot
 Resource    ../pages/pagarPage.robot
 Resource    ../pages/transferirPage.robot
@@ -88,6 +88,22 @@ CT014 - Acessar funcionalidade de Transferencia
     Quando o usuário está na tela inicial
     Então consegue acessar a funcionalidade de Transferencia
     E o campo para inserir o valor deve estar zerado
+
+CT015 - Deve ser possivel digitar um valor na tela de Transferencia
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario esta na tela de Transferencia
+    Então consegue inserir um valor numerico no campo de inserir valor
+
+CT016 - Deve ser possivel considerar caracteres diferente de numero na tela de Transferencia
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario esta na tela de Transferencia
+    Então nao deve considerar caractere diferente de numero no campo de inserir valor
+
+CT017 - Nao deve ser possivel considerar numero maior que 14 digitos
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario esta na tela de Transferencia
+    Então nao deve considerar valor inserido apos 14 digitos
+    
 
 
 
