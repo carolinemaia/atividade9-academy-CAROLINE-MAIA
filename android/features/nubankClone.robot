@@ -1,13 +1,7 @@
 *** Settings ***
 
 Resource    ../../base.robot
-Resource    ../utils/config.robot
-Resource    ../pages/telaInicialPage.robot
-Resource    ../pages/pixPage.robot
-Resource    ../pages/pagarPage.robot
-Resource    ../pages/transferirPage.robot
-Resource    ../pages/depositoPage.robot
-Resource    ../pages/emprestimoPage.robot
+
 
 #Test Setup        Open App
 Test Teardown     Teardown
@@ -95,7 +89,7 @@ CT015 - Deve ser possivel digitar um valor na tela de Transferencia
     Quando o usuario esta na tela de Transferencia
     Então consegue inserir um valor numerico no campo de inserir valor
 
-CT016 - Deve ser possivel considerar caracteres diferente de numero na tela de Transferencia
+CT016 - Nao deve ser possivel considerar caracteres diferente de numero na tela de Transferencia
     Dado que o usuário está logado no aplicativo
     Quando o usuario esta na tela de Transferencia
     Então nao deve considerar caractere diferente de numero no campo de inserir valor
@@ -136,4 +130,91 @@ CT023 - Visualiza emprestimos ativos
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela de Emprestimo
     Entao visualiza informacao se ha emprestimo ativo
+
+CT024 - Acessar funcionalidade de Recarga de Celular
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    Então consegue acessar a funcionalidade de Recarga de Celular
+    E visualiza o campo para inserir o numero de telefone
+
+#testes de recarga por ultimo
+CT025 - Deve ser possivel inserir numero de celular com 11 digitos
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela de Recarga de Celular
+    Então consegue inserir numero de telefone com 11 digitos
+
+#testes de recarga por ultimo
+CT026 - Nao deve ser possivel considerar caracteres diferente de numero na tela de Recarga de Celular
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela de Recarga de Celular
+    Então nao deve considerar caractere diferente de numero no campo de inserir telefone
+
+#testes de recarga por ultimo
+CT027 - Nao deve ser possivel considerar numero de telefone maior que 11 digitos na tela de Recarga de Celular
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela de Recarga de Celular
+    Então nao deve considerar valor inserido apos inserir telefone com 11 digitos
+
+CT028 - Voltar para tela inicial apos acessar funcionalidade de TRANSFERENCIA clicando no X
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario esta na tela de Doacao
+    Então consegue retornar para tel inicial clicando no x de transferencia
+
+CT029 - Acessar a funcionalidade de Cobrar
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    Entao acessa a funcionalidade de Cobrar
+    E o campo para inserir o valor de cobranca deve estar zerado
+
+CT030 - Deve ter opcao de nao especificar valor de cobranca
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario esta na tela de Cobrar
+    Entao tem opcao de nao especificar o valor de cobranca
+
+CT031 - Voltar para tela inicial apos acessar funcionalidade de COBRAR
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario esta na tela de Cobrar
+    Então consegue retornar para tela inicial clicando no x de cobranca
+
+C032 - Acessar a funcionalidade de Doacao
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    Entao acessa a funcionalidade de Doacao
+    E o campo para inserir o valor de doacao deve estar zerado
+
+C033 - Deve ser possivel inserir valor para Doacao
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario esta na tela de Doacao
+    Entao deve ser possivel inserir valor para doacao
+
+C034 - Nao deve considerar numero apos informar valor de 14 digitos
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario esta na tela de Doacao
+    E inserir valor maior que 14 digitos
+    Entao nao deve considerar valor inserido apos 14 digitos 
+
+C035 - Voltar para tela inicial apos acessar funcionalidade de DOACAO
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario esta na tela de Doacao
+    Então consegue retornar para tela inicial clicando no x de doacao
+
+C036 - Acessar funcionalidade Indicar Amigos
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    Entao acessa a funcionalidade de Indicar Amigos
+    E consegue visualizar todas as informacoes de indicacao para amigo
+
+C037 - Voltar para tela inicial apos acessar funcionalidade de INDICAR AMIGOS
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario esta na tela de Doacao
+    Então consegue retornar para tela inicial clicando no x de indicacao
+    
+
+    
+    
+
+
+
+
+    
 

@@ -13,3 +13,4 @@ Resource    android/pages/pagarPage.robot
 Resource    android/pages/transferirPage.robot
 Resource    android/pages/depositoPage.robot
 Resource    android/pages/emprestimoPage.robot
+Resource    android/pages/recargaPage.robot
