@@ -9,6 +9,7 @@ Resource    ../pages/depositoPage.robot
 Resource    ../pages/emprestimoPage.robot
 Resource    ../pages/recargaPage.robot
 Resource    ../pages/cobrarPage.robot
+Resource    ../pages/doacaoPage.robot
 
 
 #Test Setup        Open App
@@ -186,44 +187,21 @@ CT032 - Nao deve ser possivel considerar caractere diferente de numero no campo 
     Quando o usuario estar na tela de Cobrar
     Entao considera apenas os caracteres numericos inseridos no campo de cobranca
 
-CT031 - Voltar para tela inicial apos acessar funcionalidade de COBRAR
+CT033 - Voltar para tela inicial apos acessar funcionalidade de COBRAR
     Dado que o usuário está logado no aplicativo
     Quando o usuario estar na tela de Cobrar
     Então consegue retornar para tela inicial clicando no x de cobranca
 
-C032 - Acessar a funcionalidade de Doacao
+C034 - Acessar a funcionalidade de Doacao
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
-    Entao acessa a funcionalidade de Doacao
-    E o campo para inserir o valor de doacao deve estar zerado
+    Entao clica na funcionalidade de Doacao
 
-C033 - Deve ser possivel inserir valor para Doacao
-    Dado que o usuário está logado no aplicativo
-    Quando o usuario esta na tela de Doacao
-    Entao deve ser possivel inserir valor para doacao
-
-C034 - Nao deve considerar numero apos informar valor de 14 digitos
-    Dado que o usuário está logado no aplicativo
-    Quando o usuario esta na tela de Doacao
-    E inserir valor maior que 14 digitos
-    Entao nao deve considerar valor inserido apos 14 digitos 
-
-C035 - Voltar para tela inicial apos acessar funcionalidade de DOACAO
-    Dado que o usuário está logado no aplicativo
-    Quando o usuario esta na tela de Doacao
-    Então consegue retornar para tela inicial clicando no x de doacao
-
-C036 - Acessar funcionalidade Indicar Amigos
+C035 - Acessar funcionalidade Indicar Amigos
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
     Entao acessa a funcionalidade de Indicar Amigos
     E consegue visualizar todas as informacoes de indicacao para amigo
-
-C037 - Voltar para tela inicial apos acessar funcionalidade de INDICAR AMIGOS
-    Dado que o usuário está logado no aplicativo
-    Quando o usuario esta na tela de Doacao
-    Então consegue retornar para tela inicial clicando no x de indicacao
-    
 
     
     
