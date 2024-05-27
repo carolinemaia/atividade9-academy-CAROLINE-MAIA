@@ -10,6 +10,7 @@ Resource    ../pages/emprestimoPage.robot
 Resource    ../pages/recargaPage.robot
 Resource    ../pages/cobrarPage.robot
 Resource    ../pages/doacaoPage.robot
+Resource    ../pages/encontrarAtalhosPage.robot
 
 
 #Test Setup        Open App
@@ -197,11 +198,12 @@ C034 - Acessar a funcionalidade de Doacao
     Quando o usuário está na tela inicial
     Entao clica na funcionalidade de Doacao
 
-C035 - Acessar funcionalidade Indicar Amigos
+C035 - Acessar funcionalidade Encontrar Atalhos
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
-    Entao acessa a funcionalidade de Indicar Amigos
-    E consegue visualizar todas as informacoes de indicacao para amigo
+    Entao clica na funcionalidade de Encontrar Atalhos
+
+C036 - 
 
     
     

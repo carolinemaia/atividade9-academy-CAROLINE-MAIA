@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-26T23:35:09.129822" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-26T23:41:04.614838" rpa="false" schemaversion="5">
 <suite id="s1" name="nubankClone" source="c:\Users\Carol\Desktop\QA RARO\atividade9-academy-CAROLINE-MAIA\android\features\nubankClone.robot">
-<test id="s1-t1" name="C034 - Acessar a funcionalidade de Doacao" line="195">
+<test id="s1-t1" name="C035 - Acessar funcionalidade Encontrar Atalhos" line="201">
 <kw name="Dado que o usuário está logado no aplicativo" owner="telaInicialPage">
 <kw name="Open App" owner="config">
 <kw name="Open Application" owner="AppiumLibrary">
@@ -18,51 +18,51 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2024-05-26T23:35:09.393977" elapsed="15.082832"/>
+<status status="PASS" start="2024-05-26T23:41:04.906942" elapsed="13.462554"/>
 </kw>
-<status status="PASS" start="2024-05-26T23:35:09.392465" elapsed="15.084344"/>
+<status status="PASS" start="2024-05-26T23:41:04.905777" elapsed="13.465225"/>
 </kw>
-<status status="PASS" start="2024-05-26T23:35:09.392465" elapsed="15.085345"/>
+<status status="PASS" start="2024-05-26T23:41:04.905777" elapsed="13.465225"/>
 </kw>
 <kw name="Quando o usuário está na tela inicial" owner="telaInicialPage">
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2024-05-26T23:35:25.414165" level="INFO">xpath criteria: //android.view.View[@content-desc="Olá, Breno Freitas"]</msg>
+<msg time="2024-05-26T23:41:19.214575" level="INFO">xpath criteria: //android.view.View[@content-desc="Olá, Breno Freitas"]</msg>
 <arg>${DADOS_NOME}</arg>
 <arg>10</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2024-05-26T23:35:24.479490" elapsed="0.937351"/>
+<status status="PASS" start="2024-05-26T23:41:18.371511" elapsed="0.845522"/>
 </kw>
 <kw name="Page Should Contain Element" owner="AppiumLibrary">
-<msg time="2024-05-26T23:35:25.476270" level="INFO">Current page contains element 'xpath=//android.widget.ScrollView/android.view.View[1]'.</msg>
-<msg time="2024-05-26T23:35:25.476270" level="INFO">xpath criteria: //android.widget.ScrollView/android.view.View[1]</msg>
+<msg time="2024-05-26T23:41:19.274086" level="INFO">Current page contains element 'xpath=//android.widget.ScrollView/android.view.View[1]'.</msg>
+<msg time="2024-05-26T23:41:19.274219" level="INFO">xpath criteria: //android.widget.ScrollView/android.view.View[1]</msg>
 <arg>${ICON_PERFIL}</arg>
 <doc>Verifies that current page contains `locator` element.</doc>
-<status status="PASS" start="2024-05-26T23:35:25.416841" elapsed="0.059429"/>
+<status status="PASS" start="2024-05-26T23:41:19.217033" elapsed="0.057186"/>
 </kw>
 <kw name="Page Should Contain Element" owner="AppiumLibrary">
-<msg time="2024-05-26T23:35:25.534455" level="INFO">Current page contains element 'xpath=//android.widget.ScrollView/android.widget.Button[1]'.</msg>
-<msg time="2024-05-26T23:35:25.535455" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.Button[1]</msg>
+<msg time="2024-05-26T23:41:19.322555" level="INFO">Current page contains element 'xpath=//android.widget.ScrollView/android.widget.Button[1]'.</msg>
+<msg time="2024-05-26T23:41:19.323060" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.Button[1]</msg>
 <arg>${ICON_OLHO}</arg>
 <doc>Verifies that current page contains `locator` element.</doc>
-<status status="PASS" start="2024-05-26T23:35:25.476270" elapsed="0.059185"/>
+<status status="PASS" start="2024-05-26T23:41:19.274219" elapsed="0.048841"/>
 </kw>
 <kw name="Page Should Contain Element" owner="AppiumLibrary">
-<msg time="2024-05-26T23:35:25.588696" level="INFO">Current page contains element 'xpath=//android.widget.ScrollView/android.widget.Button[2]'.</msg>
-<msg time="2024-05-26T23:35:25.588696" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.Button[2]</msg>
+<msg time="2024-05-26T23:41:19.371759" level="INFO">Current page contains element 'xpath=//android.widget.ScrollView/android.widget.Button[2]'.</msg>
+<msg time="2024-05-26T23:41:19.371759" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.Button[2]</msg>
 <arg>${ICON_AJUDA}</arg>
 <doc>Verifies that current page contains `locator` element.</doc>
-<status status="PASS" start="2024-05-26T23:35:25.535455" elapsed="0.054240"/>
+<status status="PASS" start="2024-05-26T23:41:19.323060" elapsed="0.048699"/>
 </kw>
 <kw name="Page Should Contain Element" owner="AppiumLibrary">
-<msg time="2024-05-26T23:35:25.639920" level="INFO">Current page contains element 'xpath=//android.widget.ScrollView/android.widget.Button[3]'.</msg>
-<msg time="2024-05-26T23:35:25.639920" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.Button[3]</msg>
+<msg time="2024-05-26T23:41:19.417226" level="INFO">Current page contains element 'xpath=//android.widget.ScrollView/android.widget.Button[3]'.</msg>
+<msg time="2024-05-26T23:41:19.417226" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.Button[3]</msg>
 <arg>${ICON_EMAIL}</arg>
 <doc>Verifies that current page contains `locator` element.</doc>
-<status status="PASS" start="2024-05-26T23:35:25.589695" elapsed="0.050225"/>
+<status status="PASS" start="2024-05-26T23:41:19.371759" elapsed="0.045467"/>
 </kw>
-<status status="PASS" start="2024-05-26T23:35:24.477810" elapsed="1.162110"/>
+<status status="PASS" start="2024-05-26T23:41:18.371511" elapsed="1.045715"/>
 </kw>
-<kw name="Entao clica na funcionalidade de Doacao" owner="doacaoPage">
+<kw name="Entao clica na funcionalidade de Encontrar Atalhos" owner="encontrarAtalhosPage">
 <kw name="Swipe By Percent" owner="AppiumLibrary">
 <arg>75</arg>
 <arg>50</arg>
@@ -71,38 +71,38 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>1000</arg>
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
 Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
-<status status="PASS" start="2024-05-26T23:35:25.641427" elapsed="1.350126"/>
+<status status="PASS" start="2024-05-26T23:41:19.418223" elapsed="1.321035"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-05-26T23:35:26.995594" level="INFO">Clicking element 'xpath=//android.widget.ScrollView/android.widget.HorizontalScrollView[1]/android.widget.Button[4]'.</msg>
-<msg time="2024-05-26T23:35:29.572239" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.HorizontalScrollView[1]/android.widget.Button[4]</msg>
-<arg>${DOACAO}</arg>
+<msg time="2024-05-26T23:41:20.742938" level="INFO">Clicking element 'xpath=//android.widget.ScrollView/android.widget.HorizontalScrollView[1]/android.widget.Button[5]'.</msg>
+<msg time="2024-05-26T23:41:23.279712" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.HorizontalScrollView[1]/android.widget.Button[5]</msg>
+<arg>${ENCONTRAR_ATALHOS}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-05-26T23:35:26.992064" elapsed="2.580175"/>
+<status status="PASS" start="2024-05-26T23:41:20.739258" elapsed="2.540959"/>
 </kw>
-<status status="PASS" start="2024-05-26T23:35:25.641427" elapsed="3.931397"/>
+<status status="PASS" start="2024-05-26T23:41:19.417226" elapsed="3.862991"/>
 </kw>
 <kw name="Teardown" owner="config" type="TEARDOWN">
 <kw name="Run Keyword" owner="BuiltIn">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <arg>Capture Page Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2024-05-26T23:35:29.573834" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-26T23:41:23.281228" elapsed="0.000518"/>
 </kw>
 <arg>Run Keyword If Test Failed</arg>
 <arg>Capture Page Screenshot</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<status status="PASS" start="2024-05-26T23:35:29.573834" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-26T23:41:23.281228" elapsed="0.000518"/>
 </kw>
 <kw name="Close All Applications" owner="AppiumLibrary">
 <doc>Closes all open applications.</doc>
-<status status="PASS" start="2024-05-26T23:35:29.573834" elapsed="0.358579"/>
+<status status="PASS" start="2024-05-26T23:41:23.281746" elapsed="0.618669"/>
 </kw>
-<status status="PASS" start="2024-05-26T23:35:29.573329" elapsed="0.360591"/>
+<status status="PASS" start="2024-05-26T23:41:23.280724" elapsed="0.619691"/>
 </kw>
-<status status="PASS" start="2024-05-26T23:35:09.390444" elapsed="20.543992"/>
+<status status="PASS" start="2024-05-26T23:41:04.904102" elapsed="18.996313"/>
 </test>
-<status status="PASS" start="2024-05-26T23:35:09.134075" elapsed="20.802074"/>
+<status status="PASS" start="2024-05-26T23:41:04.619544" elapsed="19.283649"/>
 </suite>
 <statistics>
 <total>
