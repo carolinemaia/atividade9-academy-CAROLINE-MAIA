@@ -7,7 +7,6 @@ Resource    ../utils/commons.robot
 ${COBRAR}                  xpath=//android.widget.ScrollView/android.widget.HorizontalScrollView[1]/android.widget.Button[3]
 ${COBRAR_VALOR_INICIAL}    xpath=//android.widget.EditText[@text="R$ 0,00"]
 ${COBRAR_CAMPO}            xpath=//android.widget.EditText
-${}
 
 
 *** Keywords ***
