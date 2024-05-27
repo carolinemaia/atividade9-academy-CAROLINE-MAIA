@@ -27,4 +27,4 @@ E esta na tela de funcionalidade de Pagar
     Visualiza o atalho    ${PAGAR_BOLETO}
 
 Então consegue retornar para tela inicial clicando no x de pagar
-    Clica no atalho    ${FECHAR}
+    Click Element   ${FECHAR}

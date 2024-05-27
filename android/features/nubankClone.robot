@@ -1,6 +1,13 @@
 *** Settings ***
 
 Resource    ../../base.robot
+Resource    ../pages/telaInicialPage.robot
+Resource    ../pages/pixPage.robot
+Resource    ../pages/pagarPage.robot
+Resource    ../pages/transferirPage.robot
+Resource    ../pages/depositoPage.robot
+Resource    ../pages/emprestimoPage.robot
+Resource    ../pages/recargaPage.robot
 
 
 #Test Setup        Open App
@@ -137,28 +144,25 @@ CT024 - Acessar funcionalidade de Recarga de Celular
     Então consegue acessar a funcionalidade de Recarga de Celular
     E visualiza o campo para inserir o numero de telefone
 
-#testes de recarga por ultimo
 CT025 - Deve ser possivel inserir numero de celular com 11 digitos
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela de Recarga de Celular
     Então consegue inserir numero de telefone com 11 digitos
 
-#testes de recarga por ultimo
 CT026 - Nao deve ser possivel considerar caracteres diferente de numero na tela de Recarga de Celular
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela de Recarga de Celular
     Então nao deve considerar caractere diferente de numero no campo de inserir telefone
 
-#testes de recarga por ultimo
 CT027 - Nao deve ser possivel considerar numero de telefone maior que 11 digitos na tela de Recarga de Celular
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela de Recarga de Celular
     Então nao deve considerar valor inserido apos inserir telefone com 11 digitos
 
-CT028 - Voltar para tela inicial apos acessar funcionalidade de TRANSFERENCIA clicando no X
+CT028 - Voltar para tela inicial apos acessar funcionalidade de RECARGA clicando no X
     Dado que o usuário está logado no aplicativo
-    Quando o usuario esta na tela de Doacao
-    Então consegue retornar para tel inicial clicando no x de transferencia
+    Quando o usuário está na tela de Recarga de Celular
+    Então consegue retornar para tel inicial clicando no x de recarga
 
 CT029 - Acessar a funcionalidade de Cobrar
     Dado que o usuário está logado no aplicativo
