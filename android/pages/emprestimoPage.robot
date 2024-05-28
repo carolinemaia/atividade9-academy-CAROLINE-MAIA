@@ -13,10 +13,13 @@ ${EMPRESTIMO_INFO_MUDANCA}    xpath=//android.view.View[@content-desc="Este valo
 ${EMPRESTIMO_INFO}            xpath=//android.view.View[@content-desc="Entenda como funciona >"]
 ${EMPRESTIMO_NOVO}            xpath=//android.widget.Button[@content-desc="NOVO EMPRÉSTIMO"]
 ${EMPRESTIMO_AJUDA}           xpath=//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button[2]
-
+${EMPRESTIMO_ATALHO}          xpath=//android.view.View[@content-desc="Você tem R$ 10.000,00 disponíveis para empréstimo."]
 
 
 *** Keywords ***
+Então consegue visualizar no atalho o valor disponivel para empréstimo
+    Visualiza o atalho    ${EMPRESTIMO_ATALHO}
+
 Então visualiza todas informações sobre valor de Emprestimo
     Visualiza o atalho    ${EMPRESTIMO_VALOR}
     Visualiza o atalho    ${EMPRESTIMO_INFO_MUDANCA}

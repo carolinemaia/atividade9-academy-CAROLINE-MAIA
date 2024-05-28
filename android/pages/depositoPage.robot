@@ -25,9 +25,5 @@ E consegue visualizar todas as funcoes para depositar
 
 Quando o usuario esta na tela de Depósito
     Clica no atalho       ${DEPOSITAR}
-
-Então consegue retornar para tela inicial clicando no x de depósito
-    Clica no atalho       ${FECHAR}
-    Visualiza o atalho    ${DADOS_NOME}
     
     

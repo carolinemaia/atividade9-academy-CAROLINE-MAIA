@@ -25,6 +25,3 @@ E esta na tela de funcionalidade de Pagar
     Visualiza o atalho    ${PAGAR_PIX}
     Visualiza o atalho    ${PAGAR_CARTAO}
     Visualiza o atalho    ${PAGAR_BOLETO}
-
-Então consegue retornar para tela inicial clicando no x de pagar
-    Click Element   ${FECHAR}

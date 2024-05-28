@@ -42,7 +42,3 @@ Então nao deve considerar valor inserido apos 14 digitos
 
 Então consegue clicar no icone de Qrcode
     Clica no atalho                      ${TRANSFERIR_ICON_QRCODE}
-
-Então consegue retornar para tela inicial clicando no x de transferencia
-    Clica no atalho                      ${TRANSFERIR_FECHAR}
-    Visualiza o atalho                   ${DADOS_NOME}

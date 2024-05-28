@@ -85,7 +85,14 @@ Então deve ser possivel acessar a funcionalidade de indicar amigos
 
 E deve conseguir visualizar mais informações sobre indicar amigos
     Visualiza o atalho    ${DESCUBRA_INDICAR_INFO}
-    
+
+Então consegue retornar para tela inicial deslizando tela para baixo
+    Swipe By Percent    50    15    50    85    1000
+    Visualiza o atalho    ${DADOS_NOME}
+
+E consegue retornar para tela inicial deslizando tela para baixo
+    Swipe By Percent    50    15    50    85    1000
+    Visualiza o atalho    ${DADOS_NOME}
     
     
     
