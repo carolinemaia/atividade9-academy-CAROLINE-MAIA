@@ -15,7 +15,11 @@ ${MEUS_CARTOES}               xpath=//android.view.View[@content-desc="Meus cart
 ${GUARDAR_DINHEIRO}           xpath=//android.view.View[@content-desc="Conquiste planos futuros: conheça as opções para guardar dinheiro."]
 ${FECHAR}                     xpath=//android.widget.Button
 ${SEGURO_VIDA}                xpath=//android.view.View[@content-desc="Seguro de vida\nConheça Nubank Vida: um seguro simples e que cabe no bolso."]
-
+${DESCUBRA_WHATS}             xpath=//android.view.View[@content-desc="WhatsApp\nNovo\nPagamentos seguros, rápidos e sem tarifa. A experiência Nubank sem nem sair da conversa."]
+${DESCUBRA_WHATS_BUTTON}      xpath=//android.view.View[@content-desc="Quero conhecer"]
+${DESCUBRA_INDICAR}           xpath=//android.view.View[@content-desc="Indique seus amigos\nMostre aos seus amigos como é fácil ter uma vida sem burocracia."]
+${DESCUBRA_INDICAR_BUTTON}    xpath=//android.view.View[@content-desc="Indicar amigos"]
+${DESCUBRA_INDICAR_INFO}      xpath=//android.widget.ImageView[@content-desc="Resgate seus amigos da fila do banco\nPara cada indicação aceita, um amigo salvo da burocracia"]
 
 *** Keywords ***
 Dado que o usuário está logado no aplicativo
@@ -65,7 +69,24 @@ Então deve ser possível visualizar a funcionalidade de Seguro de Vida
     Visualiza o atalho    ${SEGURO_VIDA}
 
 E desliza tela para baixo
-    Swipe By Percent    50    95    50    10    1000
+    Swipe By Percent    40    95    40    10    1000
+
+Então visualiza opção de conhecer funções no WhatsApp
+    Visualiza o atalho    ${DESCUBRA_WHATS}
+
+E conhecer mais clicando em Quero conhecer
+    Clica no atalho    ${DESCUBRA_WHATS_BUTTON}
+
+Então deve ser possivel acessar a funcionalidade de indicar amigos
+    Wait Until Element Is Visible    ${DESCUBRA_INDICAR}
+    Swipe By Percent    90    20    20    10    1000
+    Visualiza o atalho    ${DESCUBRA_INDICAR}
+    Clica no atalho       ${DESCUBRA_INDICAR_BUTTON}
+
+E deve conseguir visualizar mais informações sobre indicar amigos
+    Visualiza o atalho    ${DESCUBRA_INDICAR_INFO}
+    
+    
     
     
 

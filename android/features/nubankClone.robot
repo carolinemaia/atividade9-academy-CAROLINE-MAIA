@@ -35,7 +35,7 @@ CT005 - Visualizar atalho de Meus Cartões
 CT006 - Visualizar atalho de aviso de empréstimo
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
-    Então consegue visualizar valor disponivel para empréstimo
+    Então consegue visualizar no atalho o valor disponivel para empréstimo
 
 CT007 - Visualizar atalho para guardar dinheiro
     Dado que o usuário está logado no aplicativo
@@ -53,11 +53,6 @@ CT010 - Voltar para tela inicial apos acessar funcionalidade de PIX clicando no 
     Dado que o usuário está logado no aplicativo
     E esta na tela de funcionalidade de PIX
     Então consegue retornar para tela inicial clicando no x do pix
-
-#CT011 - Voltar para tela inicial apos acessar funcionalidade de PIX deslizando a tela
-    #Dado que o usuário está logado no aplicativo
-    #E esta na tela de funcionalidade de PIX
-    #Então consegue retornar para tela inicial arrastdeslizando a tela para baixo
 
 CT012 - Acessar funcionalidade de pagar boleto
     Dado que o usuário está logado no aplicativo
@@ -246,7 +241,19 @@ CT - Visualizar funcionalidade de Seguro de Vida
     E desliza tela para baixo
     Então deve ser possível visualizar a funcionalidade de Seguro de Vida
 
+CT - Deve ser possivel acessar informações sobre transações no WhatsApp na seção de Descubra Mais
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    E desliza tela para baixo
+    Então visualiza opção de conhecer funções no WhatsApp
+    E conhecer mais clicando em Quero conhecer
 
+CT - Deve ser possivel acessar função de indicar amigors na seção de Descubra Mais
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    E desliza tela para baixo
+    Então deve ser possivel acessar a funcionalidade de indicar amigos
+    E deve conseguir visualizar mais informações sobre indicar amigos
     
 
 
