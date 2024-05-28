@@ -32,25 +32,18 @@ CT005 - Visualizar atalho de Meus Cartões
     Então consegue visualizar o atalho Meus Cartões
     E consegue clicar no atalho Meus Cartões
 
-CT006 - Visualiza disponibilidade de Emprestimo
+CT006 - Visualizar atalho de aviso de empréstimo
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
-    Então o usuário consegue visualizar a opcao de Emprestimo
+    Então consegue visualizar valor disponivel para empréstimo
 
-#verificar se faco caso de teste pra visualizar o valor do emprestimo
-CT007 - Acessa funcionalidade de Emprestimo
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela inicial
-    Então acessa a funcionalidade de Emprestimo
-    E visualiza opcao de solicitar novo emprestimo
-
-CT008 - Visualizar atalho para guardar dinheiro
+CT007 - Visualizar atalho para guardar dinheiro
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
     Então consegue visualizar o atalho Guardar Dinheiro
     E consegue clicar no atalho Guardar Dinheiro
 
-CT009 - Acessar funcionalidade de PIX 
+CT008 - Acessar funcionalidade de PIX 
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
     Então consegue acessar a funcionalidade de PIX
@@ -61,10 +54,10 @@ CT010 - Voltar para tela inicial apos acessar funcionalidade de PIX clicando no 
     E esta na tela de funcionalidade de PIX
     Então consegue retornar para tela inicial clicando no x do pix
 
-#CT011 - Voltar para tela inicial apos acessar funcionalidade de PIX arrastando a tela
+#CT011 - Voltar para tela inicial apos acessar funcionalidade de PIX deslizando a tela
     #Dado que o usuário está logado no aplicativo
     #E esta na tela de funcionalidade de PIX
-    #Então consegue retornar para tela inicial arrastando a tela para baixo
+    #Então consegue retornar para tela inicial arrastdeslizando a tela para baixo
 
 CT012 - Acessar funcionalidade de pagar boleto
     Dado que o usuário está logado no aplicativo
@@ -123,12 +116,6 @@ CT022 - Acessar funcionalidade de Emprestimo pelo icone
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
     Então consegue acessar a funcionalidade de Emprestimo
-    E visualiza opcao de solicitar novo emprestimo
-
-CT023 - Visualiza emprestimos ativos
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela de Emprestimo
-    Entao visualiza informacao se ha emprestimo ativo
 
 CT024 - Acessar funcionalidade de Recarga de Celular
     Dado que o usuário está logado no aplicativo
@@ -223,6 +210,26 @@ C041 - Na tela de funcionalidade de Cartão de Credito deve ser possivel retorna
     Dado que o usuário está logado no aplicativo
     Quando o usuario acessa a tela de cartão de crédito
     Então consegue retornar para tela inicial
+
+C042 - Acessar funcionalidade Emprestimo
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário acessa a funcionalidade de Emprestimo
+    Então visualiza todas informações sobre valor de Emprestimo
+    E visualiza opcao de solicitar novo emprestimo
+
+CT0 - Visualiza opção de emprestimo ativo
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário acessa a funcionalidade de Emprestimo
+    Entao visualiza informacao se ha emprestimo ativo
+
+CT0 - Visualiza opcao de ajuda na tela de emprestimo
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário acessa a funcionalidade de Emprestimo
+    Então visualiza icone de ajuda
+
+
+
+
 
 
 

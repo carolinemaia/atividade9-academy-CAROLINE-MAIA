@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-27T22:14:34.012400" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-27T22:56:17.481600" rpa="false" schemaversion="5">
 <suite id="s1" name="nubankClone" source="c:\Users\Carol\Desktop\QA RARO\atividade9-academy-CAROLINE-MAIA\android\features\nubankClone.robot">
-<test id="s1-t1" name="C041 - Na tela de funcionalidade de Cartão de Credito deve ser possivel retornar para tela inicial" line="222">
+<test id="s1-t1" name="CT0 - Visualiza opcao de ajuda na tela de emprestimo" line="225">
 <kw name="Dado que o usuário está logado no aplicativo" owner="telaInicialPage">
 <kw name="Open App" owner="config">
 <kw name="Open Application" owner="AppiumLibrary">
@@ -18,13 +18,13 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2024-05-27T22:14:34.284686" elapsed="14.467178"/>
+<status status="PASS" start="2024-05-27T22:56:17.740981" elapsed="13.213881"/>
 </kw>
-<status status="PASS" start="2024-05-27T22:14:34.284506" elapsed="14.468731"/>
+<status status="PASS" start="2024-05-27T22:56:17.739493" elapsed="13.215369"/>
 </kw>
-<status status="PASS" start="2024-05-27T22:14:34.283499" elapsed="14.469738"/>
+<status status="PASS" start="2024-05-27T22:56:17.739493" elapsed="13.215369"/>
 </kw>
-<kw name="Quando o usuario acessa a tela de cartão de crédito" owner="cartaodeCreditoPage">
+<kw name="Quando o usuário acessa a funcionalidade de Emprestimo" owner="emprestimoPage">
 <kw name="Swipe By Percent" owner="AppiumLibrary">
 <arg>50</arg>
 <arg>90</arg>
@@ -33,105 +33,71 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>1000</arg>
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
 Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
-<status status="PASS" start="2024-05-27T22:14:48.754256" elapsed="1.403611"/>
+<status status="PASS" start="2024-05-27T22:56:30.956017" elapsed="1.355984"/>
 </kw>
 <kw name="Clica no atalho" owner="commons">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-05-27T22:14:53.360327" level="INFO">xpath criteria: //android.view.View[@content-desc="Cartão de Crédito
-Fatura atual
-R$ 780,72
-Limite disponível R$ 806,78"]</msg>
+<msg time="2024-05-27T22:56:35.530134" level="INFO">xpath criteria: //android.view.View[@content-desc="Você tem R$ 10.000,00 disponíveis para empréstimo."]</msg>
 <arg>${elemento}</arg>
 <arg>10</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-05-27T22:14:50.157867" elapsed="3.204448"/>
+<status status="PASS" start="2024-05-27T22:56:32.313098" elapsed="3.219034"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-05-27T22:14:53.364736" level="INFO">Clicking element 'xpath=//android.view.View[@content-desc="Cartão de Crédito
-Fatura atual
-R$ 780,72
-Limite disponível R$ 806,78"]'.</msg>
-<msg time="2024-05-27T22:14:53.477847" level="INFO">xpath criteria: //android.view.View[@content-desc="Cartão de Crédito
-Fatura atual
-R$ 780,72
-Limite disponível R$ 806,78"]</msg>
+<msg time="2024-05-27T22:56:35.535485" level="INFO">Clicking element 'xpath=//android.view.View[@content-desc="Você tem R$ 10.000,00 disponíveis para empréstimo."]'.</msg>
+<msg time="2024-05-27T22:56:35.633124" level="INFO">xpath criteria: //android.view.View[@content-desc="Você tem R$ 10.000,00 disponíveis para empréstimo."]</msg>
 <arg>${elemento}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-05-27T22:14:53.362315" elapsed="0.115532"/>
+<status status="PASS" start="2024-05-27T22:56:35.532481" elapsed="0.100643"/>
 </kw>
-<arg>${CARTAO_CREDITO}</arg>
-<status status="PASS" start="2024-05-27T22:14:50.157867" elapsed="3.319980"/>
+<arg>${EMPRESTIMO}</arg>
+<status status="PASS" start="2024-05-27T22:56:32.312001" elapsed="3.322120"/>
 </kw>
-<status status="PASS" start="2024-05-27T22:14:48.754256" elapsed="4.723591"/>
+<status status="PASS" start="2024-05-27T22:56:30.956017" elapsed="4.678104"/>
 </kw>
-<kw name="Então consegue retornar para tela inicial" owner="cartaodeCreditoPage">
+<kw name="Então visualiza icone de ajuda" owner="emprestimoPage">
 <kw name="Clica no atalho" owner="commons">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-05-27T22:14:54.606488" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.Button[1]</msg>
+<msg time="2024-05-27T22:56:36.658898" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button[2]
+xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button[2]</msg>
 <arg>${elemento}</arg>
 <arg>10</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-05-27T22:14:53.480229" elapsed="1.126259"/>
+<status status="PASS" start="2024-05-27T22:56:35.635627" elapsed="1.023271"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-05-27T22:14:54.608608" level="INFO">Clicking element 'xpath=//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.Button[1]'.</msg>
-<msg time="2024-05-27T22:14:54.737989" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.Button[1]</msg>
+<msg time="2024-05-27T22:56:36.661906" level="INFO">Clicking element 'xpath=//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button[2]'.</msg>
+<msg time="2024-05-27T22:56:36.803355" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button[2]</msg>
 <arg>${elemento}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-05-27T22:14:54.606488" elapsed="0.131501"/>
+<status status="PASS" start="2024-05-27T22:56:36.659901" elapsed="0.144453"/>
 </kw>
-<arg>${CARTAO_VOLTAR}</arg>
-<status status="PASS" start="2024-05-27T22:14:53.479722" elapsed="1.258267"/>
+<arg>${EMPRESTIMO_AJUDA}</arg>
+<status status="PASS" start="2024-05-27T22:56:35.634625" elapsed="1.169729"/>
 </kw>
-<kw name="Swipe By Percent" owner="AppiumLibrary">
-<arg>50</arg>
-<arg>20</arg>
-<arg>50</arg>
-<arg>80</arg>
-<arg>1000</arg>
-<doc>Swipe from one percent of the screen to another percent, for an optional duration.
-Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
-<status status="PASS" start="2024-05-27T22:14:54.737989" elapsed="1.326593"/>
-</kw>
-<kw name="Visualiza o atalho" owner="commons">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-05-27T22:14:57.460390" level="INFO">xpath criteria: //android.view.View[@content-desc="Olá, Breno Freitas"]</msg>
-<arg>${elemento}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-05-27T22:14:56.065583" elapsed="1.394807"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2024-05-27T22:14:57.526826" level="INFO">xpath criteria: //android.view.View[@content-desc="Olá, Breno Freitas"]</msg>
-<arg>${elemento}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2024-05-27T22:14:57.460390" elapsed="0.066436"/>
-</kw>
-<arg>${DADOS_NOME}</arg>
-<status status="PASS" start="2024-05-27T22:14:56.064582" elapsed="1.462748"/>
-</kw>
-<status status="PASS" start="2024-05-27T22:14:53.479722" elapsed="4.047608"/>
+<status status="PASS" start="2024-05-27T22:56:35.634625" elapsed="1.169729"/>
 </kw>
 <kw name="Teardown" owner="config" type="TEARDOWN">
 <kw name="Run Keyword" owner="BuiltIn">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <arg>Capture Page Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2024-05-27T22:14:57.527330" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-27T22:56:36.804354" elapsed="0.001507"/>
 </kw>
 <arg>Run Keyword If Test Failed</arg>
 <arg>Capture Page Screenshot</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<status status="PASS" start="2024-05-27T22:14:57.527330" elapsed="0.001312"/>
+<status status="PASS" start="2024-05-27T22:56:36.804354" elapsed="0.001507"/>
 </kw>
 <kw name="Close All Applications" owner="AppiumLibrary">
 <doc>Closes all open applications.</doc>
-<status status="PASS" start="2024-05-27T22:14:57.528642" elapsed="0.580820"/>
+<status status="PASS" start="2024-05-27T22:56:36.805861" elapsed="0.538400"/>
 </kw>
-<status status="PASS" start="2024-05-27T22:14:57.527330" elapsed="0.582132"/>
+<status status="PASS" start="2024-05-27T22:56:36.804354" elapsed="0.539907"/>
 </kw>
-<status status="PASS" start="2024-05-27T22:14:34.282480" elapsed="23.828009"/>
+<status status="PASS" start="2024-05-27T22:56:17.738191" elapsed="19.606070"/>
 </test>
-<status status="PASS" start="2024-05-27T22:14:34.018154" elapsed="24.093401"/>
+<status status="PASS" start="2024-05-27T22:56:17.487246" elapsed="19.859626"/>
 </suite>
 <statistics>
 <total>

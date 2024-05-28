@@ -62,9 +62,7 @@ Então consegue clicar no icone de ajuda
 
 Então consegue retornar para tela inicial
     Clica no atalho        ${CARTAO_VOLTAR}
-    
     Swipe By Percent    50    20    50    80    1000
-
     Visualiza o atalho     ${DADOS_NOME}
     
 

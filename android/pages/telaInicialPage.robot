@@ -12,8 +12,6 @@ ${ICON_AJUDA}                 xpath=//android.widget.ScrollView/android.widget.B
 ${ICON_EMAIL}                 xpath=//android.widget.ScrollView/android.widget.Button[3]
 ${WHATSAPP}                   xpath=//android.view.View[contains(@content-desc,'WhatsApp')]
 ${MEUS_CARTOES}               xpath=//android.view.View[@content-desc="Meus cartões"]
-${EMPRESTIMO}                 xpath=//android.view.View[@content-desc="Você tem R$ 10.000,00 disponíveis para empréstimo."]
-${NOVO_EMPRESTIMO}            xpath=//android.widget.Button[@content-desc="NOVO EMPRÉSTIMO"]
 ${GUARDAR_DINHEIRO}           xpath=//android.view.View[@content-desc="Conquiste planos futuros: conheça as opções para guardar dinheiro."]
 ${FECHAR}                     xpath=//android.widget.Button
 
@@ -53,15 +51,6 @@ Então consegue visualizar o atalho Meus Cartões
 
 E consegue clicar no atalho Meus Cartões
     Clica no atalho       ${MEUS_CARTOES}
-
-Então o usuário consegue visualizar a opcao de Emprestimo
-    Visualiza o atalho    ${EMPRESTIMO}
-
-Então acessa a funcionalidade de Emprestimo
-    Clica no atalho       ${EMPRESTIMO}
-
-E visualiza opcao de solicitar novo emprestimo
-    Visualiza o atalho    ${NOVO_EMPRESTIMO}
 
 Então consegue visualizar o atalho Guardar Dinheiro
     Swipe    500    1466    0    1466
