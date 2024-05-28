@@ -217,15 +217,30 @@ C042 - Acessar funcionalidade Emprestimo
     Então visualiza todas informações sobre valor de Emprestimo
     E visualiza opcao de solicitar novo emprestimo
 
-CT0 - Visualiza opção de emprestimo ativo
+CT0 - Visualizar opção de emprestimo ativo
     Dado que o usuário está logado no aplicativo
     Quando o usuário acessa a funcionalidade de Emprestimo
     Entao visualiza informacao se ha emprestimo ativo
 
-CT0 - Visualiza opcao de ajuda na tela de emprestimo
+CT0 - Visualizar opcao de ajuda na tela de emprestimo
     Dado que o usuário está logado no aplicativo
     Quando o usuário acessa a funcionalidade de Emprestimo
     Então visualiza icone de ajuda
+
+CT - Visualizar funcionalidade de Investimentos
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    Então deve ser possivel visualizar a funcionalidade de Investimentos
+
+CT - Acessar funcionalidade de Investimentos
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    Então deve ser possivel acessar a funcionalidade de Investimento clicando em Conhecer Mais
+    E visualizar mais informações de investimento
+
+
+    
+
 
 
 

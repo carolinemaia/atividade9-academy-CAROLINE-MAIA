@@ -19,3 +19,4 @@ Resource    android/pages/cobrarPage.robot
 Resource    android/pages/doacaoPage.robot
 Resource    android/pages/encontrarAtalhosPage.robot
 Resource    android/pages/cartaodeCreditoPage.robot
+Resource    android/pages/investimentosPage.robot
