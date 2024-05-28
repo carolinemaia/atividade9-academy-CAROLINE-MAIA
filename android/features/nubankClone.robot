@@ -1,17 +1,6 @@
 *** Settings ***
 
 Resource    ../../base.robot
-Resource    ../pages/telaInicialPage.robot
-Resource    ../pages/pixPage.robot
-Resource    ../pages/pagarPage.robot
-Resource    ../pages/transferirPage.robot
-Resource    ../pages/depositoPage.robot
-Resource    ../pages/emprestimoPage.robot
-Resource    ../pages/recargaPage.robot
-Resource    ../pages/cobrarPage.robot
-Resource    ../pages/doacaoPage.robot
-Resource    ../pages/encontrarAtalhosPage.robot
-
 
 #Test Setup        Open App
 Test Teardown     Teardown
@@ -203,7 +192,43 @@ C035 - Acessar funcionalidade Encontrar Atalhos
     Quando o usuário está na tela inicial
     Entao clica na funcionalidade de Encontrar Atalhos
 
-C036 - 
+C036 - Visualizar resumo de informacoes do Cartao de Credito
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    Entao consegue visualizar resumo da fatura
+    E consegue visualizar limite disponivel
+
+C037 - Acessar funcionalidade de Cartão de Crédito
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario acessa a tela de cartão de crédito
+    Então consegue visualizar a fatural atual e limite disponivel
+    E visualiza todas as funcionalidades do cartão de crédito
+
+C038 - Deve ser possível visualizar as ultimas movimentações do cartão de crédito
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario acessa a tela de cartão de crédito
+    Então consegue visualizar as ultimas movimentações do cartão
+
+C039 - Na tela de funcionalidade de Cartão de Crédito deve ser possivel clicar na lupa de pesquisa
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario acessa a tela de cartão de crédito
+    Então consegue clicar no icone de pesquisa
+
+C040 - Na tela de funcionalidade de Cartão de Crédito deve ser possivel clicar na lupa de pesquisa
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario acessa a tela de cartão de crédito
+    Então consegue clicar no icone de ajuda
+
+C041 - Na tela de funcionalidade de Cartão de Credito deve ser possivel retornar para tela inicial
+    Dado que o usuário está logado no aplicativo
+    Quando o usuario acessa a tela de cartão de crédito
+    Então consegue retornar para tela inicial
+
+
+
+
+
+    
 
     
     
