@@ -230,13 +230,21 @@ CT0 - Visualizar opcao de ajuda na tela de emprestimo
 CT - Visualizar funcionalidade de Investimentos
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
+    E desliza tela para baixo
     Então deve ser possivel visualizar a funcionalidade de Investimentos
 
 CT - Acessar funcionalidade de Investimentos
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
+    E desliza tela para baixo
     Então deve ser possivel acessar a funcionalidade de Investimento clicando em Conhecer Mais
     E visualizar mais informações de investimento
+
+CT - Visualizar funcionalidade de Seguro de Vida
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    E desliza tela para baixo
+    Então deve ser possível visualizar a funcionalidade de Seguro de Vida
 
 
     

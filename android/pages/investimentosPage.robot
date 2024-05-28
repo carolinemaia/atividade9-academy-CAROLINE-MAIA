@@ -11,11 +11,9 @@ ${INVESTIMENTOS_INFO_TEXTO}      xpath=//android.view.View[@content-desc="Estamo
 
 *** Keywords ***
 Então deve ser possivel visualizar a funcionalidade de Investimentos
-    Swipe By Percent    50    95    50    10    1000
     Visualiza o atalho    ${INVESTIMENTOS}
 
 Então deve ser possivel acessar a funcionalidade de Investimento clicando em Conhecer Mais
-    Swipe By Percent    50    95    50    10    1000
     Clica no atalho    ${INVESTIMENTOS_CONHECER}
 
 E visualizar mais informações de investimento

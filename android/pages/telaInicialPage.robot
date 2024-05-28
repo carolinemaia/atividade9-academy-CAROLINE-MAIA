@@ -14,6 +14,7 @@ ${WHATSAPP}                   xpath=//android.view.View[contains(@content-desc,'
 ${MEUS_CARTOES}               xpath=//android.view.View[@content-desc="Meus cartões"]
 ${GUARDAR_DINHEIRO}           xpath=//android.view.View[@content-desc="Conquiste planos futuros: conheça as opções para guardar dinheiro."]
 ${FECHAR}                     xpath=//android.widget.Button
+${SEGURO_VIDA}                xpath=//android.view.View[@content-desc="Seguro de vida\nConheça Nubank Vida: um seguro simples e que cabe no bolso."]
 
 
 *** Keywords ***
@@ -60,6 +61,12 @@ E consegue clicar no atalho Guardar Dinheiro
     Swipe    500    1466    0    1466
     Clica no atalho       ${GUARDAR_DINHEIRO}
 
+Então deve ser possível visualizar a funcionalidade de Seguro de Vida
+    Visualiza o atalho    ${SEGURO_VIDA}
+
+E desliza tela para baixo
+    Swipe By Percent    50    95    50    10    1000
+    
     
 
 
