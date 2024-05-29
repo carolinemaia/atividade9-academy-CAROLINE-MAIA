@@ -6,11 +6,13 @@ Library    XML
 
 *** Variables ***
 ${DADOS_NOME}                 xpath=//android.view.View[@content-desc="Olá, Breno Freitas"]
+${CREDITO}                    xpath=//android.view.View[contains(@content-desc, "Cartão de Crédito")]
+${EMPRES}                     xpath=//android.view.View[contains(@content-desc, "Empréstimo")]
 ${DADOS_CONTA}                xpath=//android.view.View[@content-desc="Conta\nR$ 181,79"]
 ${ICON_PERFIL}                xpath=//android.widget.ScrollView/android.view.View[1]
 ${ICON_OLHO}                  xpath=//android.widget.ScrollView/android.widget.Button[1]
 ${ICON_AJUDA}                 xpath=//android.widget.ScrollView/android.widget.Button[2]
-${ICON_INDICAR}                 xpath=//android.widget.ScrollView/android.widget.Button[3]
+${ICON_INDICAR}                xpath=//android.widget.ScrollView/android.widget.Button[3]
 ${WHATSAPP}                   xpath=//android.view.View[contains(@content-desc,'WhatsApp')]
 ${MEUS_CARTOES}               xpath=//android.view.View[@content-desc="Meus cartões"]
 ${GUARDAR_DINHEIRO}           xpath=//android.view.View[@content-desc="Conquiste planos futuros: conheça as opções para guardar dinheiro."]
@@ -50,10 +52,17 @@ Então consegue visualizar seu Nome
 E icone de perfil
     Visualiza o atalho    ${ICON_PERFIL}
 
-Então consegue ocultar todo valor de Saldo
-    Clica no atalho    ${ICON_OLHO}
+Então consegue ocultar todos os valores da tela inicial
+    Espera para clicar no botão    ${ICON_OLHO}
     ${content_desc}=    Get Element Attribute    ${CONTA}    content-desc
     Should Not Contain    ${content_desc}    R$ 181,79
+
+    Swipe By Percent    50    80    50    40    1000
+    ${content_desc}=    Get Element Attribute    ${CREDITO}    content-desc
+    Should Not Contain    ${content_desc}    R$ 780,72
+
+    ${content_desc}=    Get Element Attribute    ${EMPRES}    content-desc
+    Should Not Contain    ${content_desc}    R$ 10.000,00
 
 Então consegue visualizar opção de Ajuda
     Clica no atalho    ${ICON_AJUDA}

@@ -1,8 +1,6 @@
 *** Settings ***
 
 Resource    ../../base.robot
-
-#Test Setup        Open App
 Test Teardown     Teardown
 
 *** Test Cases ***
@@ -18,10 +16,10 @@ CT002 - Visualizar informações pessoais de Nome
     Então consegue visualizar seu Nome
     E icone de perfil
 
-CT003 - Visualizar opções de ocultar/mostrar valores da tela inicial de saldo
+CT003 - Visualizar opções de ocultar/mostrar valores da tela inicial
     Dado que o usuário está logado no aplicativo  
     Quando o usuário está na tela inicial
-    Então consegue ocultar todo valor de Saldo
+    Então consegue ocultar todos os valores da tela inicial
 
 CT004 - Visualizar opção de ajuda na tela inicial
     Dado que o usuário está logado no aplicativo  
