@@ -15,7 +15,7 @@ ${PAGAR_BOLETO}               xpath=//android.view.View[@content-desc="Pagar um 
 E acessar a funcionalidade de Pagar
     Clica no atalho    ${PAGAR}
 
-Então visualizar todas as opcoes de Pagamento
+Então consegue visualizar todas as opcoes de Pagamento
     Visualiza o atalho    ${PAGAR_PIX}
     Visualiza o atalho    ${PAGAR_CARTAO}
     Visualiza o atalho    ${PAGAR_BOLETO}

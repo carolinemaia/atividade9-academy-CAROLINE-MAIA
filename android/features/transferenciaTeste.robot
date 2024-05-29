@@ -37,3 +37,5 @@ CT006 - Voltar para tela inicial apos acessar funcionalidade de TRANSFERÊNCIA
     Dado que o usuário está logado no aplicativo
     Quando o usuario esta na tela de Transferencia
     Então consegue retornar para tela inicial deslizando tela para baixo
+
+    #adicionar teste clicando no x
