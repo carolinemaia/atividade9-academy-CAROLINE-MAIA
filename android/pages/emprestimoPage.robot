@@ -14,6 +14,7 @@ ${EMPRESTIMO_INFO}            xpath=//android.view.View[@content-desc="Entenda c
 ${EMPRESTIMO_NOVO}            xpath=//android.widget.Button[@content-desc="NOVO EMPRÉSTIMO"]
 ${EMPRESTIMO_AJUDA}           xpath=//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button[2]
 ${EMPRESTIMO_ATALHO}          xpath=//android.view.View[@content-desc="Você tem R$ 10.000,00 disponíveis para empréstimo."]
+${EMPRESTIMO_VOLTAR}          xpath=//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button[1]
 
 
 *** Keywords ***
@@ -29,7 +30,7 @@ Então acessa a funcionalidade de Emprestimo
     Clica no atalho       ${EMPRESTIMO}
 
 Quando o usuário acessa a funcionalidade de Emprestimo
-    Swipe By Percent    50    90    50    40    1000
+    
     Clica no atalho       ${EMPRESTIMO}
 
 E visualiza opcao de solicitar novo emprestimo
@@ -48,6 +49,12 @@ Entao visualiza informacao se ha emprestimo ativo
 
 Então visualiza icone de ajuda
     Clica no atalho    ${EMPRESTIMO_AJUDA}
+
+E desliza tela para baixo para visualizar seção de emprestimo
+    Swipe By Percent    50    90    50    40    1000
+
+Então retorna para tela inicial clicando no icone de voltar
+    Espera para clicar no botão    ${EMPRESTIMO_VOLTAR}
     
     
 

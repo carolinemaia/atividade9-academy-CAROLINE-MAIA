@@ -33,9 +33,7 @@ CT005 - Deve ser possivel clicar no icone de QRCode na tela de Transferencia
     Quando o usuario esta na tela de Transferencia
     Então consegue clicar no icone de Qrcode
 
-CT006 - Voltar para tela inicial apos acessar funcionalidade de TRANSFERÊNCIA
+CT006 - Voltar para tela inicial apos acessar funcionalidade de TRANSFERÊNCIA clicando no X
     Dado que o usuário está logado no aplicativo
     Quando o usuario esta na tela de Transferencia
-    Então consegue retornar para tela inicial deslizando tela para baixo
-
-    #adicionar teste clicando no x
+    Então consegue retornar para tela inicial clicando no x da transferência

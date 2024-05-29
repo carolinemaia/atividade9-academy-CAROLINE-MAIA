@@ -12,8 +12,14 @@ CT001 - Acessar funcionalidade de Depositar
     Então consegue acessar a funcionalidade de Depósito
     E consegue visualizar todas as funcoes para depositar
 
-CT002 - Voltar para tela inicial apos acessar funcionalidade de Depósito
+CT002 - Voltar para tela inicial apos acessar funcionalidade de Depósito deslizando tela para baixo
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
     Então consegue acessar a funcionalidade de Depósito
     E consegue retornar para tela inicial deslizando tela para baixo
+
+CT003 - Voltar para tela inicial apos acessar funcionalidade de Depósito clicando no x
+    Dado que o usuário está logado no aplicativo
+    Quando o usuário está na tela inicial
+    Então consegue acessar a funcionalidade de Depósito
+    E consegue retornar para tela inicial clicando no x da tela de depósito

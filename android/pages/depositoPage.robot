@@ -10,6 +10,7 @@ ${DEPOSITAR_PIX}         xpath=//android.view.View[@content-desc="Pix\nSem custo
 ${DEPOSITAR_BOLETO}      xpath=//android.view.View[@content-desc="Boleto\nSem custo e pode levar 3 dias úteis para o dinheiro cair."]
 ${DEPOSITAR_TED}         xpath=//android.view.View[@content-desc="TED/DOC\nPode ter custo e cai somente em horário comercial de dias úteis."]
 ${DEPOSITAR_SALARIO}     xpath=//android.view.View[@content-desc="Trazer seu salário\nReceba todo mês direto aqui na sua conta, sem custo."]
+${DEPOSITAR_FECHAR}      xpath=//android.widget.Button
  
 
 *** Keywords ***
@@ -25,5 +26,8 @@ E consegue visualizar todas as funcoes para depositar
 
 Quando o usuario esta na tela de Depósito
     Clica no atalho       ${DEPOSITAR}
+
+E consegue retornar para tela inicial clicando no x da tela de depósito
+    Espera para clicar no botão    ${DEPOSITAR_FECHAR}
     
     
