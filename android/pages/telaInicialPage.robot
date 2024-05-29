@@ -34,9 +34,9 @@ Quando o usuário está na tela inicial
 
 #MELHORAR CASO DE TESTE PRA QUE SE ACHAR O ELEMENTO NO FINAL DA TELA SUBIR ATE O INICIO
 Então consegue navegar até o final da tela
-    Swipe    640    2032    640    121
+    Swipe By Percent    40    95    40    10    1000
     Wait Until Page Contains Element        ${WHATSAPP}
-    Swipe    640    68     640    2032
+    Swipe By Percent    40    10    40    90    1000
     Wait Until Page Contains Element        ${DADOS_NOME}
 
 Então consegue visualizar seu Nome
@@ -47,10 +47,8 @@ Então consegue visualizar saldo atual da Conta
     Element Should Be Visible      ${DADOS_CONTA}
 
 Então consegue navegar entre os atalhos de movimentação de moeda
-    Swipe    872    872    238    872
-    Swipe    248    872    872    872
-    Swipe    872    872    238    872
-
+    Swipe By Percent    75    50    0    50    1000
+    Swipe By Percent    75    50    0    50    1000
 Então consegue visualizar o atalho Meus Cartões
     Visualiza o atalho    ${MEUS_CARTOES}
 
@@ -59,9 +57,11 @@ E consegue clicar no atalho Meus Cartões
 
 Então consegue visualizar o atalho Guardar Dinheiro
     Swipe    500    1466    0    1466
+    Swipe    500    1466    0    1466
     Visualiza o atalho    ${GUARDAR_DINHEIRO}
 
 E consegue clicar no atalho Guardar Dinheiro
+    Swipe    500    1466    0    1466
     Swipe    500    1466    0    1466
     Clica no atalho       ${GUARDAR_DINHEIRO}
 
