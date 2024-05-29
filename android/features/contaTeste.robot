@@ -52,7 +52,7 @@ C009 - Deve conseguir clicar no icone de Ajuda
     E o usuário está na tela de Conta
     Então consegue clicar no icone de ajuda da tela Conta
 
-C009 - Deve conseguir retornar para tela inicial do aplicativo
+C010 - Deve conseguir retornar para tela inicial do aplicativo
     Dado que o usuário está logado no aplicativo
     E o usuário está na tela de Conta
     Então consegue retornar para tela inicial clicando em voltar

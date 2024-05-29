@@ -29,8 +29,18 @@ E consegue visualizar todas as funcoes do PIX
 E esta na tela de funcionalidade de PIX
     Clica no atalho       ${PIX}
     Visualiza o atalho    ${AREA_PIX}
+
+Então consegue clicar no botão de QrCode
+    Espera para clicar no botão    ${QRCODE_PIX}
+
+Então consegue clicar no botão Enviar Pix
+    Espera para clicar no botão    ${ICON_ENVIAR_PIX}
+
+Então consegue clicar no botão Ajuda Pix
+    Espera para clicar no botão    ${ICON_AJUDA_PIX}
+
 Então consegue retornar para tela inicial clicando no x do pix
-    Clica no atalho       ${FECHAR_PIX}
+    Espera para clicar no botão       ${FECHAR_PIX}
     Visualiza o atalho    ${DADOS_NOME}
 
 Então consegue retornar para tela inicial arrastando a tela para baixo

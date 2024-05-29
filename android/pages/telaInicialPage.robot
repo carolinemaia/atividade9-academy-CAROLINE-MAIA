@@ -2,14 +2,15 @@
 Resource    ../../base.robot
 Resource    ../utils/config.robot
 Resource    ../utils/commons.robot
+Library    XML
 
 *** Variables ***
 ${DADOS_NOME}                 xpath=//android.view.View[@content-desc="Olá, Breno Freitas"]
-${DADOS_CONTA}                xpath=//android.view.View[contains(@content-desc,'Conta')]
+${DADOS_CONTA}                xpath=//android.view.View[@content-desc="Conta\nR$ 181,79"]
 ${ICON_PERFIL}                xpath=//android.widget.ScrollView/android.view.View[1]
 ${ICON_OLHO}                  xpath=//android.widget.ScrollView/android.widget.Button[1]
 ${ICON_AJUDA}                 xpath=//android.widget.ScrollView/android.widget.Button[2]
-${ICON_EMAIL}                 xpath=//android.widget.ScrollView/android.widget.Button[3]
+${ICON_INDICAR}                 xpath=//android.widget.ScrollView/android.widget.Button[3]
 ${WHATSAPP}                   xpath=//android.view.View[contains(@content-desc,'WhatsApp')]
 ${MEUS_CARTOES}               xpath=//android.view.View[@content-desc="Meus cartões"]
 ${GUARDAR_DINHEIRO}           xpath=//android.view.View[@content-desc="Conquiste planos futuros: conheça as opções para guardar dinheiro."]
@@ -26,16 +27,17 @@ Dado que o usuário está logado no aplicativo
     Open App
 
 Quando o usuário está na tela inicial
-    Wait Until Page Contains Element    ${DADOS_NOME}    10
+    Wait Until Page Contains Element    ${DADOS_NOME}    
     Page Should Contain Element         ${ICON_PERFIL}
     Page Should Contain Element         ${ICON_OLHO}
     Page Should Contain Element         ${ICON_AJUDA}
-    Page Should Contain Element         ${ICON_EMAIL}
+    Page Should Contain Element         ${ICON_INDICAR}
 
-#MELHORAR CASO DE TESTE PRA QUE SE ACHAR O ELEMENTO NO FINAL DA TELA SUBIR ATE O INICIO
 Então consegue navegar até o final da tela
     Swipe By Percent    40    95    40    10    1000
     Wait Until Page Contains Element        ${WHATSAPP}
+    
+E retornar para o inicio da tela
     Swipe By Percent    40    10    40    90    1000
     Wait Until Page Contains Element        ${DADOS_NOME}
 
@@ -43,17 +45,36 @@ Então consegue visualizar seu Nome
     Wait Until Page Contains Element    ${DADOS_NOME}    10s
     ${content_desc}=    Get Element Attribute    ${DADOS_NOME}    content-desc
     Page Should Contain Text    ${content_desc}    Olá, Breno Freitas
+
+E icone de perfil
+    Visualiza o atalho    ${ICON_PERFIL}
+
+Então consegue ocultar todo valor de Saldo
+    Clica no atalho    ${ICON_OLHO}
+    ${content_desc}=    Get Element Attribute    ${CONTA}    content-desc
+    Should Not Contain    ${content_desc}    R$ 181,79
+
+Então consegue visualizar opção de Ajuda
+    Clica no atalho    ${ICON_AJUDA}
+
+Então consegue acessar funcionalidade pelo icone no topo da tela
+    Clica no atalho    ${ICON_INDICAR}
+
 Então consegue visualizar saldo atual da Conta
     Element Should Be Visible      ${DADOS_CONTA}
 
 Então consegue navegar entre os atalhos de movimentação de moeda
     Swipe By Percent    75    50    0    50    1000
     Swipe By Percent    75    50    0    50    1000
+
 Então consegue visualizar o atalho Meus Cartões
     Visualiza o atalho    ${MEUS_CARTOES}
 
 E consegue clicar no atalho Meus Cartões
     Clica no atalho       ${MEUS_CARTOES}
+
+Então consegue visualizar no atalho o valor disponivel para empréstimo
+    Visualiza o atalho    ${EMPRESTIMO_ATALHO}
 
 Então consegue visualizar o atalho Guardar Dinheiro
     Swipe    500    1466    0    1466

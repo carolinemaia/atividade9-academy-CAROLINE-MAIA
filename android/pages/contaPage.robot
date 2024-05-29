@@ -82,10 +82,3 @@ Então consegue clicar no icone de ajuda da tela Conta
 Então consegue retornar para tela inicial clicando em voltar
     Clica no atalho        ${CONTA_VOLTAR}
     Visualiza o atalho     ${DADOS_NOME}
-
-
-
-
-
-
-

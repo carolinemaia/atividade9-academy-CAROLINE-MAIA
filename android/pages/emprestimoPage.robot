@@ -17,9 +17,6 @@ ${EMPRESTIMO_ATALHO}          xpath=//android.view.View[@content-desc="Você tem
 
 
 *** Keywords ***
-Então consegue visualizar no atalho o valor disponivel para empréstimo
-    Visualiza o atalho    ${EMPRESTIMO_ATALHO}
-
 Então visualiza todas informações sobre valor de Emprestimo
     Visualiza o atalho    ${EMPRESTIMO_VALOR}
     Visualiza o atalho    ${EMPRESTIMO_INFO_MUDANCA}

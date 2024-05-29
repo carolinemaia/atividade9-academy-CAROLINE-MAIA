@@ -8,7 +8,7 @@ ${DOACAO}    xpath=//android.widget.ScrollView/android.widget.HorizontalScrollVi
 
 *** Keywords ***
 Entao consegue clicar na funcionalidade de Doacao
-    Swipe By Percent    75    50    0    50    1000
-    Click Element    ${DOACAO}
+    Swipe By Percent    80    50    0    50    1000
+    Espera para clicar no botão    ${DOACAO}
 
 
