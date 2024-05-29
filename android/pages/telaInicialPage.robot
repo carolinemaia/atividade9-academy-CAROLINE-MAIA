@@ -21,6 +21,7 @@ ${DESCUBRA_WHATS_BUTTON}      xpath=//android.view.View[@content-desc="Quero con
 ${DESCUBRA_INDICAR}           xpath=//android.view.View[@content-desc="Indique seus amigos\nMostre aos seus amigos como é fácil ter uma vida sem burocracia."]
 ${DESCUBRA_INDICAR_BUTTON}    xpath=//android.view.View[@content-desc="Indicar amigos"]
 ${DESCUBRA_INDICAR_INFO}      xpath=//android.widget.ImageView[@content-desc="Resgate seus amigos da fila do banco\nPara cada indicação aceita, um amigo salvo da burocracia"]
+${FECHAR}                     xpath=//android.widget.Button
 
 *** Keywords ***
 Dado que o usuário está logado no aplicativo
@@ -115,8 +116,12 @@ E consegue retornar para tela inicial deslizando tela para baixo
     Swipe By Percent    50    15    50    85    1000
     Visualiza o atalho    ${DADOS_NOME}
     
-    
-    
+ #utilizado em telas comuns
+ Então consegue retornar para tela inicial clicando no x
+     Espera para clicar no botão    ${FECHAR}
+
+E consegue retornar para tela inicial clicando no x
+    Espera para clicar no botão    ${FECHAR}    
 
 
 

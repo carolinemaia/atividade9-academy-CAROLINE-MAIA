@@ -15,7 +15,7 @@ CT001 - Acessar funcionalidade de Pagar boleto
 CT002 - Voltar para tela inicial apos acessar funcionalidade de PAGAR clicando no X
     Dado que o usuário está logado no aplicativo
     E esta na tela de funcionalidade de Pagar
-    Então consegue retornar para tela inicial clicando no x de Pagar
+    Então consegue retornar para tela inicial clicando no x
 
 CT003 - Voltar para tela inicial apos acessar funcionalidade de PAGAR deslizando tela para baixo
     Dado que o usuário está logado no aplicativo

@@ -22,4 +22,4 @@ CT003 - Voltar para tela inicial apos acessar funcionalidade de Depósito clican
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
     Então consegue acessar a funcionalidade de Depósito
-    E consegue retornar para tela inicial clicando no x da tela de depósito
+    E consegue retornar para tela inicial clicando no x
