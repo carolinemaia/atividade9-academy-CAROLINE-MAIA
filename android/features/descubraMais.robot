@@ -2,7 +2,6 @@
 
 Resource    ../../base.robot
 
-#Test Setup        Open App
 Test Teardown     Teardown
 
 *** Test Cases ***
@@ -13,7 +12,7 @@ CT001 - Deve ser possivel acessar informações sobre transações no WhatsApp n
     Então visualiza opção de conhecer funções no WhatsApp
     E conhecer mais clicando em Quero conhecer
 
-CT002 - Deve ser possivel acessar função de indicar amigors na seção de Descubra Mais
+CT002 - Deve ser possivel acessar função de indicar amigos na seção de Descubra Mais
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
     E desliza tela para baixo

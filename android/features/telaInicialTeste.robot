@@ -61,36 +61,9 @@ CT011 - Visualizar atalho para guardar dinheiro
     Então consegue visualizar o atalho Guardar Dinheiro
     E consegue clicar no atalho Guardar Dinheiro
 
-C012 - Acessar funcionalidade Encontrar Atalhos
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela inicial
-    Entao clica na funcionalidade de Encontrar Atalhos
-
-CT013 - Visualizar funcionalidade de Seguro de Vida
+CT012 - Visualizar funcionalidade de Seguro de Vida
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
     E desliza tela para baixo
-    Então deve ser possível visualizar a funcionalidade de Seguro de Vida
-
-
-    
-
-
-
-
-
-
-
-
-
-
-    
-
-    
-    
-
-
-
-
-    
+    Então deve ser possível visualizar a funcionalidade de Seguro de Vida   
 

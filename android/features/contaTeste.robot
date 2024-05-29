@@ -2,7 +2,6 @@
 
 Resource    ../../base.robot
 
-#Test Setup        Open App
 Test Teardown     Teardown
 
 *** Test Cases ***
@@ -47,12 +46,12 @@ C007 - Deve conseguir visualizar o Histórico de movimentação da Conta
     E o usuário está na tela de Conta
     Então consegue visualizar todo o historico de movimentação da Conta
 
-C009 - Deve conseguir clicar no icone de Ajuda
+C008 - Deve conseguir clicar no icone de Ajuda
     Dado que o usuário está logado no aplicativo
     E o usuário está na tela de Conta
     Então consegue clicar no icone de ajuda da tela Conta
 
-C010 - Deve conseguir retornar para tela inicial do aplicativo
+C009 - Deve conseguir retornar para tela inicial do aplicativo
     Dado que o usuário está logado no aplicativo
     E o usuário está na tela de Conta
     Então consegue retornar para tela inicial clicando em voltar
