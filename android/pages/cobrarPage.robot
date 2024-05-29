@@ -23,19 +23,20 @@ Quando o usuario estar na tela de Cobrar
 
 Entao tem opcao de nao especificar o valor de cobranca
     Wait Until Element Is Visible    ${COBRAR_VALOR_INICIAL}
-    ${texto_hint}=    Get Element Attribute    ${COBRAR_VALOR_INICIAL}    hint
+    ${texto_hint}=    AppiumLibrary.Get Element Attribute    ${COBRAR_VALOR_INICIAL}    hint
     Should Contain    ${texto_hint}    Qual valor você quer receber?
 
 Então consegue inserir um valor no campo de cobranca
     Wait Until Element Is Visible        ${COBRAR_CAMPO}
     [Arguments]    ${element}    
     Input Text                           ${COBRAR_CAMPO}    ${element}
-    Wait Until Keyword Succeeds    5    1    Element Text Should Be     ${COBRAR_CAMPO}    R$ 85,20
+    Wait Until Keyword Succeeds    5    1    AppiumLibrary.Element Text Should Be     ${COBRAR_CAMPO}    R$ 85,20
 
 Entao considera apenas os caracteres numericos inseridos no campo de cobranca
     Wait Until Element Is Visible        ${COBRAR_CAMPO}
     [Arguments]    ${element}    
     Input Text                           ${COBRAR_CAMPO}    ${element}
-    Wait Until Keyword Succeeds    5    1    Element Text Should Be     ${COBRAR_CAMPO}    R$ 98,56
+    Wait Until Keyword Succeeds    5    1    AppiumLibrary.Element Text Should Be     ${COBRAR_CAMPO}    R$ 98,56
 
-    
+#UTILIZANDO 'AppiumLibrary.' pois, ao rodar todos os testes utilizando a opção "Run Test", no terminal alertou que a keyword  'Element Text Should Be'
+# está presente tanto na biblioteca AppiumLibrary quanto XML. Para que não aja problema sobre a ambiguidade especifiquei a biblioteca na Keyword.  

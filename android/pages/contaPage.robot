@@ -16,7 +16,7 @@ ${CONTA_EMPRESTIMO}    xpath=//android.widget.HorizontalScrollView/android.widge
 ${CONTA_COBRAR}        xpath=//android.widget.HorizontalScrollView/android.widget.Button[5]
 ${HISTORICO}           xpath=//android.view.View[@content-desc="Histórico"]
 ${HISTORICO_ITEM1}     xpath=//android.view.View[contains(@content-desc, "PATRICIA")]
-${HISTORICO_ITEM2}     xpath=//android.view.View[contains(@content-desc, "ANDRE")]
+${HISTORICO_ITEM2}     xpath=//android.view.View[contains(@content-desc, "ANDRE JEY")]
 ${HISTORICO_ITEM3}     xpath=//android.view.View[contains(@content-desc, "ERIKO")]
 ${HISTORICO_ITEM4}     xpath=//android.view.View[contains(@content-desc, "IVAN")]
 ${CONTA_AJUDA}         xpath=//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.Button[2]
@@ -47,8 +47,8 @@ Então consegue acessar a funcionalidade de Transferencia pela tela de Conta
 
 E consegue inserir um valor numerico no campo de inserir valor para Transferência
     Wait Until Element Is Visible        ${TRANSFERIR_CAMPO}    
-    Input Text                           ${TRANSFERIR_CAMPO}            ${TRANSFERIR_VALOR_INSERIDO}
-    Wait Until Keyword Succeeds    5    1    Element Text Should Be     ${TRANSFERIR_CAMPO}    R$ 40,00
+    Input Text                           ${TRANSFERIR_CAMPO}            4000
+    Wait Until Keyword Succeeds    5    1    AppiumLibrary.Element Text Should Be     ${TRANSFERIR_CAMPO}    R$ 40,00
 
 Então consegue acessar a funcionalidade de Emprestimo pela tela de Conta
     Espera para clicar no botão    ${CONTA_EMPRESTIMO}
@@ -69,8 +69,8 @@ E consegue inserir um valor numerico no campo de inserir valor para Cobrança
     Wait Until Keyword Succeeds    5    1    Element Text Should Be     ${COBRAR_CAMPO}    R$ 85,20
 
 Então consegue visualizar todo o historico de movimentação da Conta
-    Swipe By Percent    50    90    50    10    1000
     Visualiza o atalho    ${HISTORICO}
+    Swipe By Percent    50    90    50    10    1000
     Visualiza o atalho    ${HISTORICO_ITEM1}
     Visualiza o atalho    ${HISTORICO_ITEM2}
     Visualiza o atalho    ${HISTORICO_ITEM3}

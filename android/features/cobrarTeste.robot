@@ -24,7 +24,7 @@ CT003 - Deve ser possivel digitar um valor na tela de cobranca
 CT004 - Nao deve ser possivel considerar caractere diferente de numero no campo de inserir valor para cobranca
     Dado que o usuário está logado no aplicativo
     Quando o usuario estar na tela de Cobrar
-    Entao considera apenas os caracteres numericos inseridos no campo de cobranca    985abc6
+    Entao considera apenas os caracteres numericos inseridos no campo de cobranca    985ab6
 
 CT005 - Voltar para tela inicial apos acessar funcionalidade de COBRAR clicando no X
     Dado que o usuário está logado no aplicativo

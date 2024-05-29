@@ -4,7 +4,7 @@ Resource    ../../base.robot
 Test Teardown     Teardown
 
 *** Test Cases ***
-C001 - Rolar tela do aplicativo
+C001 - Deslizar tela do aplicativo
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
     Então consegue navegar até o final da tela
