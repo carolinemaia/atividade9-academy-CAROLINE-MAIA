@@ -9,6 +9,7 @@ ${AREA_PAGAR}                 xpath=//android.widget.FrameLayout[@resource-id="a
 ${PAGAR_PIX}                  xpath=//android.view.View[@content-desc="Pagar com Pix\nLeia um QR Code ou cole o código."]
 ${PAGAR_CARTAO}               xpath=//android.view.View[@content-desc="Pagar fatura do cartão\nLibera o limite do seu Cartão de Crédito."]
 ${PAGAR_BOLETO}               xpath=//android.view.View[@content-desc="Pagar um boleto\nContas de luz, água, etc."]
+${PAGAR_FECHAR}               xpath=//android.widget.Button
 
 
 *** Keywords ***
@@ -25,3 +26,7 @@ E esta na tela de funcionalidade de Pagar
     Visualiza o atalho    ${PAGAR_PIX}
     Visualiza o atalho    ${PAGAR_CARTAO}
     Visualiza o atalho    ${PAGAR_BOLETO}
+
+Então consegue retornar para tela inicial clicando no x de Pagar
+    Espera para clicar no botão    ${PAGAR_FECHAR}
+    
