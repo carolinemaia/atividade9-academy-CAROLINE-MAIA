@@ -25,17 +25,17 @@ Quando o usuario esta na tela de Transferencia
     Clica no atalho                     ${TRANSFERIR}
 
 Então consegue inserir um valor numerico no campo de inserir valor
-    Wait Until Element Is Visible        ${TRANSFERIR_CAMPO}    3
+    Wait Until Element Is Visible        ${TRANSFERIR_CAMPO}    
     Input Text                           ${TRANSFERIR_CAMPO}            ${TRANSFERIR_VALOR_INSERIDO}
     Wait Until Keyword Succeeds    5    1    Element Text Should Be     ${TRANSFERIR_CAMPO}    R$ 40,00
 
 Então nao deve considerar caractere diferente de numero no campo de inserir valor
-    Wait Until Element Is Visible        ${TRANSFERIR_CAMPO}    3
+    Wait Until Element Is Visible        ${TRANSFERIR_CAMPO}    
     Input Text                           ${TRANSFERIR_CAMPO}            ${TRANSFERIR_VALOR_CARACTERE}
     Wait Until Keyword Succeeds    5    1    Element Text Should Be     ${TRANSFERIR_CAMPO}    R$ 12,50
 
 Então nao deve considerar valor inserido apos 14 digitos
-    Wait Until Element Is Visible        ${TRANSFERIR_CAMPO}    3
+    Wait Until Element Is Visible        ${TRANSFERIR_CAMPO}    
     Input Text                           ${TRANSFERIR_CAMPO}            ${TRANSFERIR_VALOR_14DIG}
     Input Text                           ${TRANSFERIR_CAMPO}            ${TRANSFERIR_VALOR_EXTRA}
     Wait Until Keyword Succeeds    5    1    Element Text Should Be     ${TRANSFERIR_CAMPO}    R$ 123.456.789.012,34

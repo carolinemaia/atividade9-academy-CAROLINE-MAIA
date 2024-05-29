@@ -43,213 +43,23 @@ CT007 - Visualizar atalho para guardar dinheiro
     Então consegue visualizar o atalho Guardar Dinheiro
     E consegue clicar no atalho Guardar Dinheiro
 
-CT008 - Acessar funcionalidade de PIX 
+C008 - Acessar a funcionalidade de Doacao
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
-    Então consegue acessar a funcionalidade de PIX
-    E consegue visualizar todas as funcoes do PIX
+    Entao consegue clicar na funcionalidade de Doacao
 
-CT009 - Voltar para tela inicial apos acessar funcionalidade de PIX clicando no X
-    Dado que o usuário está logado no aplicativo
-    E esta na tela de funcionalidade de PIX
-    Então consegue retornar para tela inicial clicando no x do pix
-
-CT010 - Acessar funcionalidade de Pagar boleto
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela inicial
-    E acessar a funcionalidade de Pagar
-    Então visualizar todas as opcoes de Pagamento
-
-CT011 - Voltar para tela inicial apos acessar funcionalidade de PAGAR
-    Dado que o usuário está logado no aplicativo
-    E esta na tela de funcionalidade de Pagar
-    Então consegue retornar para tela inicial deslizando tela para baixo
-
-CT012 - Acessar funcionalidade de Transferencia
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela inicial
-    Então consegue acessar a funcionalidade de Transferencia
-    E o campo para inserir o valor deve estar zerado
-
-CT013 - Deve ser possivel digitar um valor na tela de Transferencia
-    Dado que o usuário está logado no aplicativo
-    Quando o usuario esta na tela de Transferencia
-    Então consegue inserir um valor numerico no campo de inserir valor
-
-CT014 - Nao deve ser possivel considerar caracteres diferente de numero na tela de Transferencia
-    Dado que o usuário está logado no aplicativo
-    Quando o usuario esta na tela de Transferencia
-    Então nao deve considerar caractere diferente de numero no campo de inserir valor
-
-CT015 - Nao deve ser possivel considerar numero maior que 14 digitos
-    Dado que o usuário está logado no aplicativo
-    Quando o usuario esta na tela de Transferencia
-    Então nao deve considerar valor inserido apos 14 digitos
-
-CT16 - Deve ser possivel clicar no icone de QRCode na tela de Transferencia
-    Dado que o usuário está logado no aplicativo
-    Quando o usuario esta na tela de Transferencia
-    Então consegue clicar no icone de Qrcode
-
-CT017 - Voltar para tela inicial apos acessar funcionalidade de TRANSFERÊNCIA
-    Dado que o usuário está logado no aplicativo
-    Quando o usuario esta na tela de Transferencia
-    Então consegue retornar para tela inicial deslizando tela para baixo
-
-CT018 - Acessar funcionalidade de Depositar
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela inicial
-    Então consegue acessar a funcionalidade de Depósito
-    E consegue visualizar todas as funcoes para depositar
-
-CT019 - Voltar para tela inicial apos acessar funcionalidade de Depósito
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela inicial
-    Então consegue acessar a funcionalidade de Depósito
-    E consegue retornar para tela inicial deslizando tela para baixo
-
-CT020 - Acessar funcionalidade de Emprestimo pelo icone
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela inicial
-    Então consegue acessar a funcionalidade de Emprestimo
-
-CT021 - Acessar funcionalidade de Recarga de Celular
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela inicial
-    Então consegue acessar a funcionalidade de Recarga de Celular
-    E visualiza o campo para inserir o numero de telefone
-
-CT022 - Deve ser possivel inserir numero de celular com 11 digitos
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela de Recarga de Celular
-    Então consegue inserir numero de telefone com 11 digitos
-
-CT023 - Nao deve ser possivel considerar caracteres diferente de numero na tela de Recarga de Celular
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela de Recarga de Celular
-    Então nao deve considerar caractere diferente de numero no campo de inserir telefone
-
-CT024 - Nao deve ser possivel considerar numero de telefone maior que 11 digitos na tela de Recarga de Celular
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela de Recarga de Celular
-    Então nao deve considerar valor inserido apos inserir telefone com 11 digitos
-
-CT025 - Voltar para tela inicial apos acessar funcionalidade de RECARGA clicando no X
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela de Recarga de Celular
-    Então consegue retornar para tel inicial clicando no x de recarga
-
-CT026 - Acessar a funcionalidade de Cobrar
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela inicial
-    Entao acessa a funcionalidade de Cobrar
-    E o campo para inserir o valor de cobranca deve estar zerado
-
-CT027 - Deve ter opcao de nao especificar valor de cobranca
-    Dado que o usuário está logado no aplicativo
-    Quando o usuario estar na tela de Cobrar
-    Entao tem opcao de nao especificar o valor de cobranca
-
-CT028 - Deve ser possivel digitar um valor na tela de cobranca
-    Dado que o usuário está logado no aplicativo
-    Quando o usuario estar na tela de Cobrar
-    Então consegue inserir um valor no campo de cobranca
-
-CT029 - Nao deve ser possivel considerar caractere diferente de numero no campo de inserir valor para cobranca
-    Dado que o usuário está logado no aplicativo
-    Quando o usuario estar na tela de Cobrar
-    Entao considera apenas os caracteres numericos inseridos no campo de cobranca
-
-C030 - Acessar a funcionalidade de Doacao
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela inicial
-    Entao clica na funcionalidade de Doacao
-
-C031 - Acessar funcionalidade Encontrar Atalhos
+C009 - Acessar funcionalidade Encontrar Atalhos
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
     Entao clica na funcionalidade de Encontrar Atalhos
 
-C032 - Visualizar resumo de informacoes do Cartao de Credito
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela inicial
-    Entao consegue visualizar resumo da fatura
-    E consegue visualizar limite disponivel
-
-C033 - Acessar funcionalidade de Cartão de Crédito
-    Dado que o usuário está logado no aplicativo
-    Quando o usuario acessa a tela de cartão de crédito
-    Então consegue visualizar a fatural atual e limite disponivel
-    E visualiza todas as funcionalidades do cartão de crédito
-
-C034 - Deve ser possível visualizar as ultimas movimentações do cartão de crédito
-    Dado que o usuário está logado no aplicativo
-    Quando o usuario acessa a tela de cartão de crédito
-    Então consegue visualizar as ultimas movimentações do cartão
-
-C035 - Na tela de funcionalidade de Cartão de Crédito deve ser possivel clicar na lupa de pesquisa
-    Dado que o usuário está logado no aplicativo
-    Quando o usuario acessa a tela de cartão de crédito
-    Então consegue clicar no icone de pesquisa
-
-C036 - Na tela de funcionalidade de Cartão de Crédito deve ser possivel clicar na lupa de pesquisa
-    Dado que o usuário está logado no aplicativo
-    Quando o usuario acessa a tela de cartão de crédito
-    Então consegue clicar no icone de ajuda
-
-C037 - Na tela de funcionalidade de Cartão de Credito deve ser possivel retornar para tela inicial
-    Dado que o usuário está logado no aplicativo
-    Quando o usuario acessa a tela de cartão de crédito
-    Então consegue retornar para tela inicial
-
-C038 - Acessar funcionalidade Emprestimo
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário acessa a funcionalidade de Emprestimo
-    Então visualiza todas informações sobre valor de Emprestimo
-    E visualiza opcao de solicitar novo emprestimo
-
-CT039 - Visualizar opção de emprestimo ativo
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário acessa a funcionalidade de Emprestimo
-    Entao visualiza informacao se ha emprestimo ativo
-
-CT040 - Visualizar opcao de ajuda na tela de emprestimo
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário acessa a funcionalidade de Emprestimo
-    Então visualiza icone de ajuda
-
-CT041 - Visualizar funcionalidade de Investimentos
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela inicial
-    E desliza tela para baixo
-    Então deve ser possivel visualizar a funcionalidade de Investimentos
-
-CT042 - Acessar funcionalidade de Investimentos
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela inicial
-    E desliza tela para baixo
-    Então deve ser possivel acessar a funcionalidade de Investimento clicando em Conhecer Mais
-    E visualizar mais informações de investimento
-
-CT043 - Visualizar funcionalidade de Seguro de Vida
+CT010 - Visualizar funcionalidade de Seguro de Vida
     Dado que o usuário está logado no aplicativo
     Quando o usuário está na tela inicial
     E desliza tela para baixo
     Então deve ser possível visualizar a funcionalidade de Seguro de Vida
 
-CT044 - Deve ser possivel acessar informações sobre transações no WhatsApp na seção de Descubra Mais
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela inicial
-    E desliza tela para baixo
-    Então visualiza opção de conhecer funções no WhatsApp
-    E conhecer mais clicando em Quero conhecer
 
-CT045 - Deve ser possivel acessar função de indicar amigors na seção de Descubra Mais
-    Dado que o usuário está logado no aplicativo
-    Quando o usuário está na tela inicial
-    E desliza tela para baixo
-    Então deve ser possivel acessar a funcionalidade de indicar amigos
-    E deve conseguir visualizar mais informações sobre indicar amigos
     
 
 

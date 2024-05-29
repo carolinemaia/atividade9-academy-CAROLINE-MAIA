@@ -47,7 +47,8 @@ E visualiza todas as funcionalidades do cartão de crédito
     Visualiza o atalho    ${FATURA_PAGAR}
     Visualiza o atalho    ${FATURA_RESUMO}
     Visualiza o atalho    ${FATURA_LIMITES}
-    Visualiza o atalho    ${CATAO_VIRTUAL}  
+    Visualiza o atalho    ${CATAO_VIRTUAL}
+                          
 
 Então consegue visualizar as ultimas movimentações do cartão
     Wait Until Element Is Visible    ${CARTAO_FATURA}

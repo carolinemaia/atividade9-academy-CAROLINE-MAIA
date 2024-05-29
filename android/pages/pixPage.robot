@@ -34,4 +34,5 @@ Então consegue retornar para tela inicial clicando no x do pix
     Visualiza o atalho    ${DADOS_NOME}
 
 Então consegue retornar para tela inicial arrastando a tela para baixo
-    Clica no atalho    ${AREA_PIX}
+    Swipe By Percent    50    15    50    85    1000
+    Visualiza o atalho    ${DADOS_NOME}
